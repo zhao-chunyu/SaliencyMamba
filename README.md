@@ -14,7 +14,7 @@
 
 ## ⚡Proposed Model
 
-<img src="fig\model_overview.png" alt="image-20240726153118844" style="zoom: 33%;" /> 
+<img src="fig\model_overview.png" alt="image-20240726153118844" style="zoom: 10%;" /> 
 
 ## 📖Datasets
 
