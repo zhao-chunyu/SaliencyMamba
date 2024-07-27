@@ -8,11 +8,11 @@
 
 - **2024/07/24**: All the code and models are completed.
   - our model (SalM$^2$)
-    - How to train:  [command](#Run train ) & [script](#Run train )
+    - How to train:  [command](# 	Run train) & [script](# 	Run train)
     - How to test:  [command](#Run test ) & [script](#Run test )
   - compare model
-    - Static prediction model:  [command](#Run train ) & [script](#Run train )
-    - Dynamic prediction model:  [command](#Run train ) & [script](#Run train )
+    - Static prediction model:  [command](# 	Run train) & [script](# 	Run train)
+    - Dynamic prediction model:  [command](# 	Run train) & [script](# 	Run train)
 
 ## 💬Motivation
 
