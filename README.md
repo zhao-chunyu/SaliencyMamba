@@ -1,4 +1,4 @@
-# <img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />SalM$^2$: Saliency Mamba Model
+# <img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />$SalM^2$: Saliency Mamba Model
 
  - *For our proposed Sal method, we collect datasets and other popular modeling codes.*
  - *We give a series of instructions and demo files.*
@@ -7,12 +7,12 @@
 ## 🔥Update
 
 - **2024/07/24**: All the code and models are completed.
-  - our model (SalM$^2$)
-    - How to train:  [command](# 	Run train) & [script](# 	Run train)
+  - our model ($SalM^2$)
+    - How to train:  [command](#Run train) & [script](#Run train)
     - How to test:  [command](#Run test ) & [script](#Run test )
   - compare model
-    - Static prediction model:  [command](# 	Run train) & [script](# 	Run train)
-    - Dynamic prediction model:  [command](# 	Run train) & [script](# 	Run train)
+    - Static prediction model:  [command](#Run train) & [script](#Run train)
+    - Dynamic prediction model:  [command](#Run train) & [script](#Run train)
 
 ## 💬Motivation
 
