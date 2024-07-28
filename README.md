@@ -1,5 +1,4 @@
-<a id="top"></a>
-# <img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />$SalM^2$: Saliency Mamba Model
+<a id="top"></a># <img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />$SalM^2$: Saliency Mamba Model
  - *For our proposed Sal method, we collect datasets and other popular modeling codes.*
  - *We give a series of instructions and demo files.*
  - *We promise to give the complete code and result files after the paper is accepted.*
