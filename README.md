@@ -24,7 +24,7 @@
 
 ## 📖Datasets
 
-| Name         | Train  | Valid | Test  | Dataset example                                              |
+| Name         | Train (video/frame)  | Valid (video/frame) | Test (video/frame)  | Dataset example                                              |
 | ------------ | ------ | ----- | ----- | ------------------------------------------------------------ |
 | TrafficGaze  | 49080  | 6655  | 19135 | <img src="fig\TrafficGaze-example.gif" alt="BDDA-3" style="zoom:100%;" /> |
 | DrFixD-rainy | 52291  | 9816  | 19154 | <img src="fig\DrFixD-rainy-example.gif" alt="BDDA-1" style="zoom:100%;" /> |
