@@ -1,5 +1,5 @@
-# <img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />$SalM^2$: Saliency Mamba Model
 <a id="top"></a>
+# <img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />$SalM^2$: Saliency Mamba Model
  - *For our proposed Sal method, we collect datasets and other popular modeling codes.*
  - *We give a series of instructions and demo files.*
  - *We promise to give the complete code and result files after the paper is accepted.*
@@ -38,7 +38,7 @@
 >
 > (3) **BDDA**: This dataset we uploaded in [link](www.baidu.com "Download BDDA"). Some camera videos and gazemap videos frame rate inconsistency, we have matched and cropped them. Some camera videos do not correspond to gazemap videos, we have filtered them. Official web in [link](https://deepdrive.berkeley.edu/ "Official BDDA")。
 
-## 🛠️ Deployment **[🔁](#🔥Update)**<a href="#top">Link to top</a>
+## 🛠️ Deployment <a href="#top">🔁</a>
 
 
 ------
