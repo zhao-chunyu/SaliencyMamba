@@ -82,7 +82,7 @@ python test.py --dataset 'BDDA'
 
 ​	2. Download prediction results.
 
-| SalM$^2$ for *TraffiGaze*                                    | SalM$^2$ for *DrFixD-rainy*                                  | SalM$^2$ for *BDDA*                                          |
+| $SalM^2$ for *TraffiGaze*                                    | $SalM^2$ for *DrFixD-rainy*                                  | $SalM^2$ for *BDDA*                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [The prediction results link](www.baidu.com "Prediction TraffiGaze") | [The prediction results link](www.baidu.com "Prediction DrFixD-rainy") | [The prediction results link](www.baidu.com "Prediction BDDA") |
 
