@@ -114,7 +114,7 @@ python test.py --dataset 'BDDA'
 
 - ***Event recognition***: saliency map → **Guide** → event recognition
 
-  ![image-20240727154913433](fig/downstream_task2.png)
+  <img src="fig/downstream_task2.png" alt="B" style="zoom:100%;" />
 
 - ***Other downstream tasks***......
 
