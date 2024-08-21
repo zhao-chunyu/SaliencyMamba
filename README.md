@@ -98,7 +98,7 @@ python test.py --dataset 'BDDA'
 
 ## 🚀 Live Demo **[🔁](#🔥Update)**
 
-<img src="fig/model_prediction1.gif" alt="BDDA-1" style="zoom:100%;" /><img src="fig/model_prediction2.gif" alt="BDDA-2" style="zoom:100%;" />
+<img src="fig/demo-example1.gif" alt="BDDA-1" style="zoom:100%;" /><img src="fig/demo-example2.gif" alt="BDDA-2" style="zoom:100%;" /><img src="fig/demo-example3.gif" alt="BDDA-2" style="zoom:100%;" />
 
 ## ✨ Downstream Tasks
 
