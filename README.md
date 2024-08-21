@@ -18,7 +18,7 @@
 
 ​	**(1) Using semantic information to guide driver attention.**
 
-<img src="fig\motivation1.png" style="zoom: 100%;">
+<img src="fig\Motivation1.png" style="zoom: 100%;">
 
 - **Solution**: We propose a dual-branch network that separately extracts semantic information and image information. The semantic information is used to guide the image information at the deepest level of image feature extraction.
 
