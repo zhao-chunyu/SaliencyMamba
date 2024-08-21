@@ -1,4 +1,4 @@
-# <img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />SalM$^2$: Saliency Mamba Model
+# <img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />$SalM^2$: Saliency Mamba Model
 
  - *For our proposed Sal method, we collect datasets and other popular modeling codes.*
  - *We give a series of instructions and demo files.*
@@ -7,7 +7,7 @@
 ## 🔥Update
 
 - **2024/07/24**: All the code and models are completed.
-  - our model (SalM$^2$)
+  - our model ($SalM^2$)
     - How to train:  [command](#Run train ) & [script](#Run train )
     - How to test:  [command](#Run test ) & [script](#Run test )
   - compare model
@@ -94,7 +94,7 @@ python test.py --dataset 'BDDA'
 
 ​	2. Download prediction results.
 
-| SalM$^2$ for *TrafficGaze*                                   | SalM$^2$ for *DrFixD-rainy*                                  | SalM$^2$ for *BDDA*                                          |
+| $SalM^2$ for *TrafficGaze*                                   | $SalM^2$ for *DrFixD-rainy*                                  | $SalM^2$ for *BDDA*                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [The prediction results link](www.baidu.com "Prediction TraffiGaze") | [The prediction results link](www.baidu.com "Prediction DrFixD-rainy") | [The prediction results link](www.baidu.com "Prediction BDDA") |
 
