@@ -52,8 +52,6 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 
 ## 🛠️ Deployment **[🔁](#🔥Update)**
 
-------
-
 ### 	Run train 
 
 ​	👉*If you wish to train with our model, please use the proceeding steps below.*
@@ -99,8 +97,6 @@ python test.py --dataset 'BDDA'
 | [The prediction results link](www.baidu.com "Prediction TraffiGaze") | [The prediction results link](www.baidu.com "Prediction DrFixD-rainy") | [The prediction results link](www.baidu.com "Prediction BDDA") |
 
 ## 🚀 Live Demo **[🔁](#🔥Update)**
-
-------
 
 <img src="fig/model_prediction1.gif" alt="BDDA-1" style="zoom:100%;" /><img src="fig/model_prediction2.gif" alt="BDDA-2" style="zoom:100%;" />
 
