@@ -44,7 +44,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 
 ​	***For all datasets we will provide our download link with the official link. Please choose according to your needs**.
 
-> (1) **TrafficGaze**: This dataset we uploaded in [link](www.baidu.com "Download Traffic_Gaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze")。
+> (1) **TrafficGaze**: This dataset we uploaded in [link](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze")。
 >
 > (2) **DrFixD-rainy**: This dataset we uploaded in [link](www.baidu.com "Download DrFixD-rainy"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/DrFixD-rainy "Official DrFixD-rainy")。
 >
@@ -58,7 +58,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 
 ​	👉*If you wish to train with our model, please use the proceeding steps below.*
 
-1. Train our model.  You can use `--dataset name` to switch datasets, which include `Traffic_Gaze`, `DrFixD-rainy`, `BDDA`. Run the following command.
+1. Train our model.  You can use `--dataset name` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, `BDDA`. Run the following command.
 
 ```python
 python main.py --dataset 'BDDA'
@@ -67,7 +67,7 @@ python main.py --dataset 'BDDA'
 ​	2. Train compare model. If the model is a *<u>**static prediction method**</u>*，run the following command.
 
 ```python
-python main.py --dataset 'Traffic_Gaze'
+python main.py --dataset 'TrafficGaze'
 ```
 
 ​	3. Train compare model. If the model is a ***<u>dynamic prediction method</u>***，run the following command.
