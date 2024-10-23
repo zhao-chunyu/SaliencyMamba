@@ -122,19 +122,19 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 
 ​	👉*If you wish to train with our model, please use the proceeding steps below.*
 
-1. Train our model.  You can use `--dataset name` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, `BDDA`. Run the following command.
+1. Train our model.  You can use `--category` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, `BDDA`. `--b` sets batch size, `--g` sets id of cuda.
 
 ```python
 python train.py --network salmm --b 32 --g 0 --category xxx --root xxx
 ```
 
-​	2. Train compare model. If the model is a *<u>**static prediction method**</u>*，run the following command.
+​	2. Train compare model. If the model is a *<u>**static prediction method**</u>*, run the following command.
 
 ```python
 python train.py --network xxx --b 32 --g 1 --category xxx --root xxx
 ```
 
-​	3. Train compare model. If the model is a ***<u>dynamic prediction method</u>***，run the following command.
+​	3. Train compare model. If the model is a ***<u>dynamic prediction method</u>***, run the following command.
 
 ```python
 python train.py --network xxx --b 32 --seq_len 6 --g 2 --category xxx --root xxx
