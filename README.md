@@ -54,6 +54,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 >
 > (3) **BDDA**: This dataset we uploaded in [link](www.baidu.com "Download BDDA"). Some camera videos and gazemap videos frame rate inconsistency, we have matched and cropped them. Some camera videos do not correspond to gazemap videos, we have filtered them. Official web in [link](https://deepdrive.berkeley.edu/ "Official BDDA").
 
+<div align="center">
 <table style="width: 100%; table-layout: auto;">
   <tr>
     <th>TrafficGaze</th>
@@ -119,7 +120,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
     </td>
   </tr>
 </table>
-
+</div>
 ## 🛠️ Deployment **[🔁](#🔥Update)**
 
 ### 	Run train 
