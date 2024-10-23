@@ -125,19 +125,19 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 1. Train our model.  You can use `--dataset name` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, `BDDA`. Run the following command.
 
 ```python
-python main.py --dataset 'BDDA'
+python train.py --network salmm --b 32 --g 0 --category xxx --root xxx
 ```
 
 ​	2. Train compare model. If the model is a *<u>**static prediction method**</u>*，run the following command.
 
 ```python
-python main.py --dataset 'TrafficGaze'
+python train.py --network xxx --b 32 --g 1 --category xxx --root xxx
 ```
 
 ​	3. Train compare model. If the model is a ***<u>dynamic prediction method</u>***，run the following command.
 
 ```python
-python main.py --dataset 'DrFixD-rainy'
+python train.py --network xxx --b 32 --seq_len 6 --g 2 --category xxx --root xxx
 ```
 
 ### 	Run test 
@@ -148,10 +148,10 @@ python main.py --dataset 'DrFixD-rainy'
 
 ​		(a) You need to download our trained model file in [link](www.baidu.com "Download salmm model.tar") and put it to the specified folder path.
 
-​		(b) You should use `--dataset name` to switch datasets, which include `Traffic_Gaze`, `DrFixD-rainy`, `BDDA`. Run the following command.
+​		(b) You should use `--category` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, `BDDA`. Run the following command.
 
 ```python
-python test.py --dataset 'BDDA'
+python evaluate.py --network salmm --b 1 --category xxx --root xxx
 ```
 
 ​	👉If you are unable to adapt your environment for other reasons, you can also download our predictions directly.
@@ -170,11 +170,11 @@ python test.py --dataset 'BDDA'
 
 *Some interesting downstream tasks are shown here, and our work will be of significant research interest.*
 
-- ***Saliency object detection***: saliency map → **Guide** → object detection
+- ***Saliency object detection***: `saliency map` → **Guide** → `object detection`
 
   <img src="fig/downstream_task1.png" alt="B" style="zoom:100%;" />
 
-- ***Event recognition***: saliency map → **Guide** → event recognition
+- ***Event recognition***: `saliency map` → **Guide** → `event recognition`
 
   <img src="fig/downstream_task2.png" alt="B" style="zoom:100%;" />
 
