@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="fig\title_logo.jpg" alt="logo" width="auto" height="auto" />
+  <img src="fig\title_logo.jpg" alt="logo" width="600" height="auto" />
   <br/>
 <b>We collect datasets and other popular modeling codes.</b>
   <br/>
