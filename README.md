@@ -200,9 +200,9 @@ python evaluate.py --network salmm --b 1 --category xxx --root xxx
 ## 🚀 Live Demo **[🔁](#🔥Update)**
 
 <div align="center">
-  <img src="fig/demo-example1.gif" alt="BDDA-1" width="100" height="auto" />
-  <img src="fig/demo-example2.gif" alt="BDDA-2" width="100" height="auto" />
-  <img src="fig/demo-example3.gif" alt="BDDA-2" width="100" height="auto" />
+  <img src="fig/demo-example1.gif" alt="BDDA-1" width="180" height="auto" />
+  <img src="fig/demo-example2.gif" alt="BDDA-2" width="180" height="auto" />
+  <img src="fig/demo-example3.gif" alt="BDDA-2" width="180" height="auto" />
 </div>
 
 ## ✨ Downstream Tasks
@@ -210,13 +210,17 @@ python evaluate.py --network salmm --b 1 --category xxx --root xxx
 *Some interesting downstream tasks are shown here, and our work will be of significant research interest.*
 
 - ***Saliency object detection***: `saliency map` → **Guide** → `object detection`
-
+  
+<div align="center">
   <img src="fig/downstream_task1.png" alt="B" style="zoom:100%;" />
-
+</div>
+  
 - ***Event recognition***: `saliency map` → **Guide** → `event recognition`
 
+<div align="center">
   <img src="fig/downstream_task2.png" alt="B" style="zoom:100%;" />
-
+</div>
+  
 - ***Other downstream tasks***......
 
 ## ⭐️ Cite **[🔁](#🔥Update)**
