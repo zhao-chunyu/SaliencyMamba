@@ -134,7 +134,7 @@ python train.py --network salmm --b 32 --g 0 --category xxx --root xxx
 python train.py --network xxx --b 32 --g 1 --category xxx --root xxx
 ```
 
-​	3. Train compare model. If the model is a ***<u>dynamic prediction method</u>***, run the following command.
+​	3. Train compare model. If the model is a ***<u>dynamic prediction method</u>***, set `--seq_len` and run the following command.
 
 ```python
 python train.py --network xxx --b 32 --seq_len 6 --g 2 --category xxx --root xxx
