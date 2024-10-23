@@ -193,10 +193,7 @@ python evaluate.py --network salmm --b 1 --category xxx --root xxx
 
 ​	2. Download prediction results.
 
-| $SalM^2$ for *TrafficGaze*                                   | $SalM^2$ for *DrFixD-rainy*                                  | $SalM^2$ for *BDDA*                                          |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [The prediction results link](www.baidu.com "Prediction TraffiGaze") | [The prediction results link](www.baidu.com "Prediction DrFixD-rainy") | [The prediction results link](www.baidu.com "Prediction BDDA") |
-
+<div align="center">
 <table>
   <thead>
     <tr>
@@ -213,7 +210,8 @@ python evaluate.py --network salmm --b 1 --category xxx --root xxx
     </tr>
   </tbody>
 </table>
-
+</div>
+  
 ## 🚀 Live Demo **[🔁](#🔥Update)**
 
 <div align="center">
