@@ -24,13 +24,13 @@
 <div align="center">
 <img src="fig\Motivation1.png" width="auto" height="auto" />
 </div>
-- **Solution**: We propose a dual-branch network that separately extracts semantic information and image information. The semantic information is used to guide the image information at the deepest level of image feature extraction.
+<b>Solution:</b>b> We propose a dual-branch network that separately extracts semantic information and image information. The semantic information is used to guide the image information at the deepest level of image feature extraction.
 
 ​	**(2) Reducing model parameters and computational complexity.**
 <div align="center">
 <img src="fig\para_s.png" style="zoom: 100%;"><img src="fig\flops_s.png" style="zoom: 100%;">
 </div>
-- **Solution**: We develop a highly lightweight saliency prediction network based on the latest Mamba framework, with only <u>**0.0785M**</u> (***88% reduction compared to SOTA***) parameters and **<u>4.45G FLOPs</u>** (***37% reduction compared to SOTA***).
+<b>Solution:</b> We develop a highly lightweight saliency prediction network based on the latest Mamba framework, with only <u>**0.0785M**</u> (***88% reduction compared to SOTA***) parameters and **<u>4.45G FLOPs</u>** (***37% reduction compared to SOTA***).
 
 ## ⚡Proposed Model
 
@@ -46,6 +46,40 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 | DrFixD-rainy | 52291               | 9816                | 19154              | <img src="fig\DrFixD-rainy-example.gif" alt="BDDA-1" style="zoom:100%;" /> |
 | BDDA         | 286251              | 63036               | 93260              | <img src="fig\BDDA-example.gif" alt="BDDA-0" style="zoom:100%;" /> |
 
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Train (video/frame)</th>
+      <th>Valid (video/frame)</th>
+      <th>Test (video/frame)</th>
+      <th>Dataset example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TrafficGaze</td>
+      <td>49080</td>
+      <td>6655</td>
+      <td>19135</td>
+      <td><img src="fig/TrafficGaze-example.gif" alt="BDDA-3" style="zoom:100%;" /></td>
+    </tr>
+    <tr>
+      <td>DrFixD-rainy</td>
+      <td>52291</td>
+      <td>9816</td>
+      <td>19154</td>
+      <td><img src="fig/DrFixD-rainy-example.gif" alt="BDDA-1" style="zoom:100%;" /></td>
+    </tr>
+    <tr>
+      <td>BDDA</td>
+      <td>286251</td>
+      <td>63036</td>
+      <td>93260</td>
+      <td><img src="fig/BDDA-example.gif" alt="BDDA-0" style="zoom:100%;" /></td>
+    </tr>
+  </tbody>
+</table>
 ​	***For all datasets we will provide our download link with the official link. Please choose according to your needs**.
 
 > (1) **TrafficGaze**: This dataset we uploaded in [link](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze").
