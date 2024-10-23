@@ -27,9 +27,9 @@ We promise to release all code after the paper is accepted.
 - **Solution**: We propose a dual-branch network that separately extracts semantic information and image information. The semantic information is used to guide the image information at the deepest level of image feature extraction.
 
 ​	**(2) Reducing model parameters and computational complexity.**
-
+<div align="center">
 <img src="fig\para_s.png" style="zoom: 100%;"><img src="fig\flops_s.png" style="zoom: 100%;">
-
+</div>
 - **Solution**: We develop a highly lightweight saliency prediction network based on the latest Mamba framework, with only <u>**0.0785M**</u> (***88% reduction compared to SOTA***) parameters and **<u>4.45G FLOPs</u>** (***37% reduction compared to SOTA***).
 
 ## ⚡Proposed Model
