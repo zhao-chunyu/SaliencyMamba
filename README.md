@@ -24,7 +24,7 @@
 <div align="center">
 <img src="fig\Motivation1.png" width="auto" height="auto" />
 </div>
-<b>Solution:</b>b> We propose a dual-branch network that separately extracts semantic information and image information. The semantic information is used to guide the image information at the deepest level of image feature extraction.
+<b>Solution:</b> We propose a dual-branch network that separately extracts semantic information and image information. The semantic information is used to guide the image information at the deepest level of image feature extraction.
 
 ​	**(2) Reducing model parameters and computational complexity.**
 <div align="center">
