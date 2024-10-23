@@ -2,6 +2,7 @@
   <img src="fig\title_logo.jpg" alt="logo" width="auto" height="auto" />
   <br/>
  For our proposed* $SalM^2$ *method, we collect datasets and other popular modeling codes.
+  <p>$\int_{-\infty}^{\infty}e^{-x^2}dx=\sqrt{\pi}$</p>
   <br/>
 We give a series of instructions and demo files.
   <br/>
