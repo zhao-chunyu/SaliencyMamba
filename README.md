@@ -2,7 +2,7 @@
 
   <img src="fig\logo.png" alt="logo" width="100" height="auto" />
 </div>
-# <img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />$SalM^2$: Saliency Mamba Model
+#<img src="fig\logo.png" alt="image-20240726153118844" style="zoom: 100%;" />$SalM^2$: Saliency Mamba Model
 
  - *For our proposed* $SalM^2$ *method, we collect datasets and other popular modeling codes.*
  - *We give a series of instructions and demo files.*
