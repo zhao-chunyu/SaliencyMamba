@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="fig\logo.png" alt="logo" width="100" height="auto" />
+  <img src="fig\title_logo.png" alt="logo" width="100" height="auto" />
 </div>
 #$SalM^2$: Saliency Mamba Model
 
