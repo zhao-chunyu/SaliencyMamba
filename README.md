@@ -8,6 +8,12 @@
 <b>We promise to release all code after the paper is accepted.</b>
 </div>
 
+<div align="center">
+  <img src="fig/demo-example1.gif" alt="BDDA-1" width="200" height="auto" />
+  <img src="fig/demo-example2.gif" alt="BDDA-2" width="200" height="auto" />
+  <img src="fig/demo-example3.gif" alt="BDDA-2" width="200" height="auto" />
+</div>
+
 ## 🔥Update
 
 - **2024/08/16**: All the code and models are completed.
