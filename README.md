@@ -39,13 +39,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 <img src="fig\overview.png" style="zoom: 100%;">
 
 ## 📖Datasets
-
-| Name         | Train (video/frame) | Valid (video/frame) | Test (video/frame) | Dataset example                                              |
-| ------------ | ------------------- | ------------------- | ------------------ | ------------------------------------------------------------ |
-| TrafficGaze  | 49080               | 6655                | 19135              | <img src="fig\TrafficGaze-example.gif" alt="BDDA-3" style="zoom:100%;" /> |
-| DrFixD-rainy | 52291               | 9816                | 19154              | <img src="fig\DrFixD-rainy-example.gif" alt="BDDA-1" style="zoom:100%;" /> |
-| BDDA         | 286251              | 63036               | 93260              | <img src="fig\BDDA-example.gif" alt="BDDA-0" style="zoom:100%;" /> |
-
+<div align="center">
 <table>
   <thead>
     <tr>
@@ -80,6 +74,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
     </tr>
   </tbody>
 </table>
+</div>
 ​	***For all datasets we will provide our download link with the official link. Please choose according to your needs**.
 
 > (1) **TrafficGaze**: This dataset we uploaded in [link](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze").
