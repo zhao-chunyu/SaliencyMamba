@@ -74,9 +74,6 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
       &emsp;&emsp;|——test.json<br>
       &emsp;&emsp;|——train.json<br>
       &emsp;&emsp;|——valid.json
-      &emsp;&emsp;|——test.json<br>
-      &emsp;&emsp;|——train.json<br>
-      &emsp;&emsp;|——valid.json
     </td>
     <td>
       ./DrFixD-rainy<br>
@@ -92,9 +89,6 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
       &emsp;&emsp;|&emsp;&emsp;|——02<br>
       &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
       &emsp;&emsp;|&emsp;&emsp;|——16<br>
-      &emsp;&emsp;|——test.json<br>
-      &emsp;&emsp;|——train.json<br>
-      &emsp;&emsp;|——valid.json
       &emsp;&emsp;|——test.json<br>
       &emsp;&emsp;|——train.json<br>
       &emsp;&emsp;|——valid.json
