@@ -1,12 +1,10 @@
 <div align="center">
-
   <img src="fig\title_logo.jpg" alt="logo" width="auto" height="auto" />
-</div>
-#$SalM^2$: Saliency Mamba Model
-
+  <br/>
  - *For our proposed* $SalM^2$ *method, we collect datasets and other popular modeling codes.*
  - *We give a series of instructions and demo files.*
  - *We promise to give the complete code and result files after the paper is accepted.*
+</div>
 
 ## 🔥Update
 
