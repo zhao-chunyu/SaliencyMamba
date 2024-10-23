@@ -16,13 +16,16 @@
 
 ## 🔥Update
 
-- **2024/08/16**: All the code and models are completed.
-  - our model ($SalM^2$)
-    - How to train:  [command](#Run-train ) & [script](#Run-train )
-    - How to test:  [command](#Run-test ) & [script](#Run-test )
+- **2024/10/23**: We release the uniform dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
+- **2024/07/24**: All the code and models are completed.
+- - our model ($SalM^2$)
+    - How to train:  [command](#Run train ) & [script](#Run train )
+    - How to test:  [command](#Run test ) & [script](#Run test )
   - compare model
-    - Static prediction model:  [command](#Run-train ) & [script](#Run-train )
-    - Dynamic prediction model:  [command](#Run-train ) & [script](#Run-train )
+    - Static prediction model:  [command](#Run train ) & [script](#Run train )
+    - Dynamic prediction model:  [command](#Run train ) & [script](#Run train )
+- **2024/07/05**: We collect the possible datasets to use, and make a uniform dataloader.
+- **2024/06/14**: 🤩Our model is proposed !
 
 ## 💬Motivation
 
