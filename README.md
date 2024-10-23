@@ -53,6 +53,73 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 | TrafficGaze                                                  | DrFixD-rainy                                                 | BDDA                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ./TrafficGaze<br />        \|——fixdata<br />        \|        \|——fixdata1.mat<br />        \|        \|——fixdata2.mat<br />        \|        \|—— ... ...<br />        \|        \|——fixdata16.mat<br />        \|——trafficframe<br />        \|        \|——01<br />        \|        \|        \|——000001.jpg<br />        \|        \|        \|—— ... ...<br />        \|        \|——02<br />        \|        \|—— ... ...<br />        \|        \|——16<br />        \|——test.json<br />        \|——train.json<br />        \|——valid.json | ./DrFixD-rainy<br />        \|——fixdata<br />        \|        \|——fixdata1.mat<br />        \|        \|——fixdata2.mat<br />        \|        \|—— ... ...<br />        \|        \|——fixdata16.mat<br />        \|——trafficframe<br />        \|        \|——01<br />        \|        \|        \|——000001.jpg<br />        \|        \|        \|—— ... ...<br />        \|        \|——02<br />        \|        \|—— ... ...<br />        \|        \|——16<br />        \|——test.json<br />        \|——train.json<br />        \|——valid.json | ./BDDA<br />        \|——camera_frames<br />        \|        \|——0001<br />        \|        \|        \|——000001.jpg<br />        \|        \|        \|—— ... ...<br />        \|        \|——0002<br />        \|        \|—— ... ...<br />        \|        \|——02017<br />        \|——gazemap_frames<br />        \|        \|——0001<br />        \|        \|        \|——000001.jpg<br />        \|        \|        \|—— ... ...<br />        \|        \|——0002<br />        \|        \|—— ... ...<br />        \|        \|——02017<br />        \|——test.json<br />        \|——train.json<br />        \|——valid.json |
+
+<table style="width:100%;">
+  <tr>
+    <th>TrafficGaze</th>
+    <th>DrFixD-rainy</th>
+    <th>BDDA</th>
+  </tr>
+  <tr>
+    <td>
+      ./TrafficGaze<br>
+      &emsp;|——fixdata<br>
+      &emsp;&emsp;|——fixdata1.mat<br>
+      &emsp;&emsp;|——fixdata2.mat<br>
+      &emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——fixdata16.mat<br>
+      &emsp;|——trafficframe<br>
+      &emsp;&emsp;|——01<br>
+      &emsp;&emsp;&emsp;|——000001.jpg<br>
+      &emsp;&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——02<br>
+      &emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——16<br>
+      |——test.json<br>
+      |——train.json<br>
+      |——valid.json
+    </td>
+    <td>
+      ./DrFixD-rainy<br>
+      &emsp;|——fixdata<br>
+      &emsp;&emsp;|——fixdata1.mat<br>
+      &emsp;&emsp;|——fixdata2.mat<br>
+      &emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——fixdata16.mat<br>
+      &emsp;|——trafficframe<br>
+      &emsp;&emsp;|——01<br>
+      &emsp;&emsp;&emsp;|——000001.jpg<br>
+      &emsp;&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——02<br>
+      &emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——16<br>
+      |——test.json<br>
+      |——train.json<br>
+      |——valid.json
+    </td>
+    <td>
+      ./BDDA<br>
+      &emsp;|——camera_frames<br>
+      &emsp;&emsp;|——0001<br>
+      &emsp;&emsp;&emsp;|——000001.jpg<br>
+      &emsp;&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——0002<br>
+      &emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——02017<br>
+      |——gazemap_frames<br>
+      &emsp;&emsp;|——0001<br>
+      &emsp;&emsp;&emsp;|——000001.jpg<br>
+      &emsp;&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——0002<br>
+      &emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|——02017<br>
+      |——test.json<br>
+      |——train.json<br>
+      |——valid.json
+    </td>
+  </tr>
+</table>
+
 ## 🛠️ Deployment **[🔁](#🔥Update)**
 
 ### 	Run train 
