@@ -1,11 +1,11 @@
 <div align="center">
   <img src="fig\title_logo.jpg" alt="logo" width="auto" height="auto" />
   <br/>
- - *For our proposed* $SalM^2$ *method, we collect datasets and other popular modeling codes.*
+ For our proposed* $SalM^2$ *method, we collect datasets and other popular modeling codes.
   <br/>
- - *We give a series of instructions and demo files.*
+We give a series of instructions and demo files.
   <br/>
- - *We promise to give the complete code and result files after the paper is accepted.*
+We promise to give the complete code and result files after the paper is accepted.
 </div>
 
 ## 🔥Update
