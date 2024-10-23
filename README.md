@@ -150,6 +150,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
   </tr>
 </table>
 </div>
+
 ## 🛠️ Deployment **[🔁](#🔥Update)**
 
 ### 	Run train 
