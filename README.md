@@ -1,11 +1,11 @@
 <div align="center">
   <img src="fig\title_logo.jpg" alt="logo" width="auto" height="auto" />
   <br/>
-We collect datasets and other popular modeling codes.
+<b>We collect datasets and other popular modeling codes.</b>
   <br/>
-We will give a series of instructions and demo files.
+<b>We will give a series of instructions and demo files.</b>
   <br/>
-**We promise to release all code after the paper is accepted.**
+<b>We promise to release all code after the paper is accepted.</b>
 </div>
 
 ## 🔥Update
