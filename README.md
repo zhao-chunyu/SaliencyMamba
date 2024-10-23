@@ -200,9 +200,9 @@ python evaluate.py --network salmm --b 1 --category xxx --root xxx
 ## 🚀 Live Demo **[🔁](#🔥Update)**
 
 <div align="center">
-  <img src="fig/demo-example1.gif" alt="BDDA-1" width="180" height="auto" />
-  <img src="fig/demo-example2.gif" alt="BDDA-2" width="180" height="auto" />
-  <img src="fig/demo-example3.gif" alt="BDDA-2" width="180" height="auto" />
+  <img src="fig/demo-example1.gif" alt="BDDA-1" width="200" height="auto" />
+  <img src="fig/demo-example2.gif" alt="BDDA-2" width="200" height="auto" />
+  <img src="fig/demo-example3.gif" alt="BDDA-2" width="200" height="auto" />
 </div>
 
 ## ✨ Downstream Tasks
