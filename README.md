@@ -30,7 +30,7 @@
 <div align="center">
 <img src="fig\para_s.png" style="zoom: 100%;"><img src="fig\flops_s.png" style="zoom: 100%;">
 </div>
-<b>Solution:</b> We develop a highly lightweight saliency prediction network based on the latest Mamba framework, with only <u>**0.0785M**</u> (***88% reduction compared to SOTA***) parameters and **<u>4.45G FLOPs</u>** (***37% reduction compared to SOTA***).
+<b>Solution:</b> We develop a highly lightweight saliency prediction network based on the latest Mamba framework, with only <b>0.0785M</b> (<b>88% reduction compared to SOTA</b>) parameters and <b>4.45G FLOPs</b> (<b>37% reduction compared to SOTA</b>).
 
 ## ⚡Proposed Model
 
@@ -75,7 +75,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
   </tbody>
 </table>
 </div>
-​	***For all datasets we will provide our download link with the official link. Please choose according to your needs**.
+【note】 For all datasets we will provide our download link with the official link. Please choose according to your needs.
 
 > (1) **TrafficGaze**: This dataset we uploaded in [link](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze").
 >
