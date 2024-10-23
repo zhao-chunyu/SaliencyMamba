@@ -60,17 +60,20 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
     <td>
       ./TrafficGaze<br>
       &emsp;&emsp;|——fixdata<br>
-      &emsp;&emsp;&emsp;&emsp;|——fixdata1.mat<br>
-      &emsp;&emsp;&emsp;&emsp;|——fixdata2.mat<br>
-      &emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——fixdata16.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata1.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata2.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata16.mat<br>
       &emsp;&emsp;|——trafficframe<br>
-      &emsp;&emsp;&emsp;&emsp;|——01<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|——000001.jpg<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——02<br>
-      &emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——16<br>
+      &emsp;&emsp;|&emsp;&emsp;|——01<br>
+      &emsp;&emsp;|&emsp;&emsp;&emsp;&emsp;|——000001.jpg<br>
+      &emsp;&emsp;|&emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——02<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——16<br>
+      &emsp;&emsp;|——test.json<br>
+      &emsp;&emsp;|——train.json<br>
+      &emsp;&emsp;|——valid.json
       &emsp;&emsp;|——test.json<br>
       &emsp;&emsp;|——train.json<br>
       &emsp;&emsp;|——valid.json
@@ -78,40 +81,40 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
     <td>
       ./DrFixD-rainy<br>
       &emsp;&emsp;|——fixdata<br>
-      &emsp;&emsp;&emsp;&emsp;|——fixdata1.mat<br>
-      &emsp;&emsp;&emsp;&emsp;|——fixdata2.mat<br>
-      &emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——fixdata16.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata1.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata2.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata16.mat<br>
       &emsp;&emsp;|——trafficframe<br>
-      &emsp;&emsp;&emsp;&emsp;|——01<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|——000001.jpg<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——02<br>
-      &emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——16<br>
+      &emsp;&emsp;|&emsp;&emsp;|——01<br>
+      &emsp;&emsp;|&emsp;&emsp;&emsp;&emsp;|——000001.jpg<br>
+      &emsp;&emsp;|&emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——02<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——16<br>
       &emsp;&emsp;|——test.json<br>
       &emsp;&emsp;|——train.json<br>
       &emsp;&emsp;|——valid.json
-      |——test.json<br>
-      |——train.json<br>
-      |——valid.json
+      &emsp;&emsp;|——test.json<br>
+      &emsp;&emsp;|——train.json<br>
+      &emsp;&emsp;|——valid.json
     </td>
     <td>
       ./BDDA<br>
       &emsp;&emsp;|——camera_frames<br>
-      &emsp;&emsp;|——0001<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|——0001.jpg<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——0002<br>
-      &emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——2017<br>
-      &emsp;&emsp;&emsp;&emsp;|——gazemap_frames<br>
-      &emsp;&emsp;&emsp;&emsp;|——0001<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|——0001.jpg<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——0002<br>
-      &emsp;&emsp;&emsp;&emsp;|—— ... ...<br>
-      &emsp;&emsp;&emsp;&emsp;|——2017<br>
+      &emsp;&emsp;|&emsp;&emsp;|——0001<br>
+      &emsp;&emsp;|&emsp;&emsp;|——0001.jpg<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——0002<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——2017<br>
+      &emsp;&emsp;|——gazemap_frames<br>
+      &emsp;&emsp;|&emsp;&emsp;|——0001<br>
+      &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|——0001.jpg<br>
+      &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——0002<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——2017<br>
       &emsp;&emsp;|——test.json<br>
       &emsp;&emsp;|——train.json<br>
       &emsp;&emsp;|——valid.json
