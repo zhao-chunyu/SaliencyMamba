@@ -16,14 +16,14 @@
 
 ## 🔥Update
 
-- **2024/10/23**: We release the uniform dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
+- **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
 - **2024/07/24**: All the code and models are completed.
 - - our model ($SalM^2$)
-    - How to train:  [command](#Run_train ) & [script](#Run_train )
-    - How to test:  [command](#Run_test ) & [script](#Run_test )
+    - How to train:  [command](#Run-train ) & [script](#Run-train )
+    - How to test:  [command](#Run-test ) & [script](#Run-test )
   - compare model
-    - Static prediction model:  [command](#Run_train ) & [script](#Run_train )
-    - Dynamic prediction model:  [command](#Run_train ) & [script](#Run_train )
+    - Static prediction model:  [command](#Run-train ) & [script](#Run-train )
+    - Dynamic prediction model:  [command](#Run-train ) & [script](#Run-train )
 - **2024/07/05**: We collect the possible datasets to use, and make a uniform dataloader.
 - **2024/06/14**: 🤩Our model is proposed !
 
@@ -220,7 +220,7 @@ python evaluate.py --network salmm --b 1 --category xxx --root xxx
   </tbody>
 </table>
 </div>
-  
+
 ## 🚀 Live Demo **[🔁](#🔥Update)**
 
 <div align="center">
@@ -238,13 +238,13 @@ python evaluate.py --network salmm --b 1 --category xxx --root xxx
 <div align="center">
   <img src="fig/downstream_task1.png" alt="B" style="zoom:100%;" />
 </div>
-  
+
 - ***Event recognition***: `saliency map` → **Guide** → `event recognition`
 
 <div align="center">
   <img src="fig/downstream_task2.png" alt="B" style="zoom:100%;" />
 </div>
-  
+
 - ***Other downstream tasks***......
 
 ## ⭐️ Cite **[🔁](#🔥Update)**
