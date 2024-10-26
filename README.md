@@ -1,12 +1,13 @@
 <div align="center">
   <img src="fig\title_logo.jpg" alt="logo" width="600" height="auto" />
   <br/>
-<b>We collect datasets and other popular modeling codes.</b>
+<b>We collect datasets and other popular model codes.</b>
   <br/>
 <b>We will give a series of instructions and demo files.</b>
   <br/>
 <b>We promise to release all code after the paper is accepted.</b>
 </div>
+
 
 <div align="center">
   <img src="fig/demo-example1.gif" alt="BDDA-1" width="200" height="auto" />
@@ -224,17 +225,17 @@ python evaluate.py --network salmm --b 1 --category xxx --root xxx
 ## 🚀 Live Demo **[🔁](#🔥Update)**
 
 <div align="center">
-  <img src="fig/demo-example1.gif" alt="BDDA-1" width="200" height="auto" />
-  <img src="fig/demo-example2.gif" alt="BDDA-2" width="200" height="auto" />
-  <img src="fig/demo-example3.gif" alt="BDDA-2" width="200" height="auto" />
+  <img src="fig/demo-example1.gif" alt="BDDA-1" width="230" height="auto" />
+  <img src="fig/demo-example2.gif" alt="BDDA-2" width="230" height="auto" />
+  <img src="fig/demo-example3.gif" alt="BDDA-3" width="230" height="auto" />
 </div>
+
 
 ## ✨ Downstream Tasks
 
 *Some interesting downstream tasks are shown here, and our work will be of significant research interest.*
 
 - ***Saliency object detection***: `saliency map` → **Guide** → `object detection`
-  
 <div align="center">
   <img src="fig/downstream_task1.png" alt="B" style="zoom:100%;" />
 </div>
