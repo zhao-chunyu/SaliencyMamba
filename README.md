@@ -20,6 +20,7 @@
 - **2024/11/08**: ***update supplementary materials***. [Details](supplementary.md)
 
 - - **We release all the runnable code. 🎉🎊**
+
 - - **Comparison of Runtime and GPU memory. **
   
     Better than the lightest network in the paper.
@@ -36,11 +37,40 @@
 
 - - **Performance of different resolution for SalM2. (TrafficGaze)**
 
-| Image size | AUC_B↑ | AUC_J↑ | NSS↑ | CC↑  | SIM↑ | KLD↓ | FLOPs↓ |
-| ---------- | ------ | ------ | ---- | ---- | ---- | ---- | ------ |
-| 3×256×256  | 0.92   | 0.98   | 5.90 | 0.94 | 0.78 | 0.28 | 4.45   |
-| 3×512×512  | 0.92   | 0.98   | 6.04 | 0.95 | 0.80 | 0.26 | 4.71   |
-
+<div align="center">
+<table>
+        <tr>
+            <th>Image size</th>
+            <th>AUC_B↑</th>
+            <th>AUC_J↑</th>
+            <th>NSS↑</th>
+            <th>CC↑</th>
+            <th>SIM↑</th>
+            <th>KLD↓</th>
+            <th>FLOPs↓</th>
+        </tr>
+        <tr>
+            <td>3×256×256</td>
+            <td>0.92</td>
+            <td>0.98</td>
+            <td>5.90</td>
+            <td>0.94</td>
+            <td>0.78</td>
+            <td>0.28</td>
+            <td>4.45</td>
+        </tr>
+        <tr>
+            <td>3×512×512</td>
+            <td>0.92</td>
+            <td>0.98</td>
+            <td>6.04</td>
+            <td>0.95</td>
+            <td>0.80</td>
+            <td>0.26</td>
+            <td>4.71</td>
+        </tr>
+    </table>
+</div>
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
 
 - **2024/07/24**: All the code and models are completed.
