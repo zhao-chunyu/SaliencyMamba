@@ -17,15 +17,43 @@
 
 ## 🔥Update
 
+- **2024/11/08**: ***update supplementary materials***. [Details](supplementary.md)
+
+- - **We release all the runnable code. 🎉🎊**
+- - **Comparison of Runtime and GPU memory. **
+  
+    Better than the lightest network in the paper.
+  
+<div align="center">
+<img src="fig\runtime.jpg" width="800" height="auto" />
+</div>
+
+- - **Driver attention shift cases. (+15 cases)**
+
+<div align="center">
+<img src="fig\cases.gif" width="800" height="auto" />
+</div>
+
+- - **Performance of different resolution for SalM2. (TrafficGaze)**
+
+| Image size | AUC_B↑ | AUC_J↑ | NSS↑ | CC↑  | SIM↑ | KLD↓ | FLOPs↓ |
+| ---------- | ------ | ------ | ---- | ---- | ---- | ---- | ------ |
+| 3×256×256  | 0.92   | 0.98   | 5.90 | 0.94 | 0.78 | 0.28 | 4.45   |
+| 3×512×512  | 0.92   | 0.98   | 6.04 | 0.95 | 0.80 | 0.26 | 4.71   |
+
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
+
 - **2024/07/24**: All the code and models are completed.
+
 - - our model ($SalM^2$)
     - How to train:  [command](#Run-train ) & [script](#Run-train )
     - How to test:  [command](#Run-test ) & [script](#Run-test )
   - compare model
     - Static prediction model:  [command](#Run-train ) & [script](#Run-train )
     - Dynamic prediction model:  [command](#Run-train ) & [script](#Run-train )
+  
 - **2024/07/05**: We collect the possible datasets to use, and make a uniform dataloader.
+
 - **2024/06/14**: 🤩Our model is proposed !
 
 ## 💬Motivation
