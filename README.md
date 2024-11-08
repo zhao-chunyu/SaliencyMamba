@@ -21,7 +21,7 @@
 
 - - **We release all the runnable code. 🎉🎊**
 
-- - **Comparison of Runtime and GPU memory. **
+- - **Comparison of Runtime and GPU memory.** 
   
     Better than the lightest network in the paper.
   
