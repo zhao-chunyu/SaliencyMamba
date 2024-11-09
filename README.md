@@ -70,10 +70,11 @@
             <td>0.95</td>
             <td>0.80</td>
             <td>0.26</td>
-            <td>4.71</td>
+            <td>4.72</td>
         </tr>
     </table>
 </div>
+
 
 
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.

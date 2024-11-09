@@ -28,7 +28,7 @@ When such stimuli induce attention shifts, driver attention manifests as changes
 
 ### (4) Performance of different resolution for our model. (TrafficGaze)
 
-As shown in the table below, the experimental results demonstrate that: these metrics result in only a slight improvement over 256×256 input images. However, it has a FLOPs of 4.71, which significantly increases the computational amount.
+As shown in the table below, the experimental results demonstrate that: these metrics result in only a slight improvement over 256×256 input images. However, it has a FLOPs of 4.72, which significantly increases the computational amount.
 
 <div align="center">
 <table>
@@ -63,8 +63,7 @@ As shown in the table below, the experimental results demonstrate that: these me
             <td>0.95</td>
             <td>0.80</td>
             <td>0.26</td>
-            <td>4.71</td>
+            <td>4.72</td>
         </tr>
     </table>
 </div>
-
