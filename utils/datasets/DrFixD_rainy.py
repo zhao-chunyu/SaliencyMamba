@@ -95,7 +95,6 @@ def transform(x, y):
 
 def getLabel(root, vid_index, frame_index, img_shape):
     fixdatafile = (root + '/fixdata/fixdata' + str(vid_index) + '.mat')
-    # print(fixdatafile)
     data = sio.loadmat(fixdatafile)
 
     fix_x = data['fixdata'][frame_index - 1][0][:, 3]

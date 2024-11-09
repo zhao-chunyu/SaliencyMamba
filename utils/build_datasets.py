@@ -1,5 +1,5 @@
 """
-Author: xxxxxxxx
+Author: chunyu Zhao
 Date: 2024-10-10
 Description:
     - This module performs dataset-building for TrafficGze, DrFixD_rainy and BDDA.
@@ -13,6 +13,10 @@ from torch.utils.data import DataLoader
 from .datasets.TrafficGaze import *
 from .datasets.DrFixD_rainy import *
 from .datasets.BDDA import *
+
+# from datasets.TrafficGaze import *
+# from datasets.DrFixD_rainy import *
+# from datasets.BDDA import *
 
 
 def build_dataset(args=None):
@@ -39,19 +43,19 @@ def build_dataset(args=None):
     if dataset_class is None:
         raise ValueError(f"Unknown category: {args.category}")
 
-    train_loader = DataLoader(
+    train_loader = MultiEpochsDataLoader(
         dataset_class(args, train_imgs, for_train=True),
         batch_size=args.batch_size, shuffle=True,
         num_workers=args.num_workers,
         pin_memory=True)
 
-    valid_loader = DataLoader(
+    valid_loader = MultiEpochsDataLoader(
         dataset_class(args, valid_imgs),
         batch_size=args.batch_size, shuffle=False,
         num_workers=args.num_workers,
         pin_memory=True)
 
-    test_loader = DataLoader(
+    test_loader = MultiEpochsDataLoader(
         dataset_class(args, test_imgs),
         batch_size=args.batch_size, shuffle=False,
         num_workers=args.num_workers,
@@ -60,15 +64,41 @@ def build_dataset(args=None):
     return train_loader, valid_loader, test_loader
 
 
+class MultiEpochsDataLoader(torch.utils.data.DataLoader):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._DataLoader__initialized = False
+        self.batch_sampler = _RepeatSampler(self.batch_sampler)
+        self._DataLoader__initialized = True
+        self.iterator = super().__iter__()
+
+    def __len__(self):
+        return len(self.batch_sampler.sampler)
+
+    def __iter__(self):
+        for i in range(len(self)):
+            yield next(self.iterator)
+
+
+class _RepeatSampler(object):
+    def __init__(self, sampler):
+        self.sampler = sampler
+
+    def __iter__(self):
+        while True:
+            yield from iter(self.sampler)
+
+
 if __name__ == '__main__':
     import argparse
-    parser = argparse.ArgumentParser('SalMAE training', add_help=False)
+    parser = argparse.ArgumentParser('SalMAE+ training', add_help=False)
     parser.add_argument('--batch_size', default=2, type=int)
-    parser.add_argument('--workers', default=10, type=int)
+    parser.add_argument('--num_workers', default=10, type=int)
     parser.add_argument('--seq_len', default=2, type=int)
     parser.add_argument('--img_shape', default=(224, 224), type=lambda s: tuple(map(int, s.split(','))))
-    parser.add_argument('--category', default='BDDA', type=str)
-    parser.add_argument('--root', default='F:/Build_dataset/BDDA', type=str)
+    parser.add_argument('--category', default='DrFixD_rainy', type=str, help='select [BDDA or TrafficGaze or DrFixD_rainy]')
+    parser.add_argument('--root', default='/data/dataset/DrFixD-rainy', type=str)
 
     args = parser.parse_args()
 

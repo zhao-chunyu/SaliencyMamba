@@ -95,7 +95,6 @@ def transform(x, y):
 
 def getLabel(root, vid_index, frame_index, img_shape):
     fixdatafile = (root + '/fixdata/fixdata' + str(vid_index) + '.mat')
-    # print(fixdatafile)
     data = sio.loadmat(fixdatafile)
 
     fix_x = data['fixdata'][frame_index - 1][0][:, 3]
@@ -112,6 +111,7 @@ def getLabel(root, vid_index, frame_index, img_shape):
     mask = filters.gaussian_filter(mask, 40)
     mask = np.array(mask, dtype='float32')
     mask = cv2.resize(mask, img_shape, interpolation=cv2.INTER_CUBIC)
+    # mask = cv2.resize(mask, (img_shape[0]//8, img_shape[1]//8), interpolation=cv2.INTER_CUBIC)
     mask = mask.astype('float32') / 255.0
 
     if mask.max() == 0:
