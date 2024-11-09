@@ -23,7 +23,7 @@
 
 - - **Comparison of Runtime and GPU memory.** 
   
-    Better than the lightest network in the paper.
+    Better than the lightest network in the paper (Deng et al. 2019).
   
 <div align="center">
 <img src="fig\runtime.jpg" width="800" height="auto" />
@@ -40,6 +40,7 @@
 <div align="center">
 <table>
         <tr>
+            <th>Dataset</th>
             <th>Image size</th>
             <th>AUC_B↑</th>
             <th>AUC_J↑</th>
@@ -50,6 +51,7 @@
             <th>FLOPs↓</th>
         </tr>
         <tr>
+            <td>TrafficGaze</td>
             <td>3×256×256</td>
             <td>0.92</td>
             <td>0.98</td>
@@ -60,6 +62,7 @@
             <td>4.45</td>
         </tr>
         <tr>
+            <td>TrafficGaze</td>
             <td>3×512×512</td>
             <td>0.92</td>
             <td>0.98</td>
@@ -71,6 +74,8 @@
         </tr>
     </table>
 </div>
+
+
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
 
 - **2024/07/24**: All the code and models are completed.

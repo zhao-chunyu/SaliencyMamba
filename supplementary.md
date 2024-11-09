@@ -30,7 +30,41 @@ When such stimuli induce attention shifts, driver attention manifests as changes
 
 As shown in the table below, the experimental results demonstrate that: these metrics result in only a slight improvement over 256×256 input images. However, it has a FLOPs of 4.71, which significantly increases the computational amount.
 
-| Image size | AUC_B↑ | AUC_J↑ | NSS↑ | CC↑  | SIM↑ | KLD↓ | FLOPs↓ |
-| ---------- | ------ | ------ | ---- | ---- | ---- | ---- | ------ |
-| 3×256×256  | 0.92   | 0.98   | 5.90 | 0.94 | 0.78 | 0.28 | 4.45   |
-| 3×512×512  | 0.92   | 0.98   | 6.04 | 0.95 | 0.80 | 0.26 | 4.71   |
+<div align="center">
+<table>
+        <tr>
+            <th>Dataset</th>
+            <th>Image size</th>
+            <th>AUC_B↑</th>
+            <th>AUC_J↑</th>
+            <th>NSS↑</th>
+            <th>CC↑</th>
+            <th>SIM↑</th>
+            <th>KLD↓</th>
+            <th>FLOPs↓</th>
+        </tr>
+        <tr>
+            <td>TrafficGaze</td>
+            <td>3×256×256</td>
+            <td>0.92</td>
+            <td>0.98</td>
+            <td>5.90</td>
+            <td>0.94</td>
+            <td>0.78</td>
+            <td>0.28</td>
+            <td>4.45</td>
+        </tr>
+        <tr>
+            <td>TrafficGaze</td>
+            <td>3×512×512</td>
+            <td>0.92</td>
+            <td>0.98</td>
+            <td>6.04</td>
+            <td>0.95</td>
+            <td>0.80</td>
+            <td>0.26</td>
+            <td>4.71</td>
+        </tr>
+    </table>
+</div>
+
