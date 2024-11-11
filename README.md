@@ -51,7 +51,7 @@
             <th>FLOPs↓</th>
         </tr>
         <tr>
-            <td rowspan="2">TrafficGaze</td>
+            <td rowspan="2">TrafficGaze<br>(📆2024.11.08)</td>
             <td>3×256×256</td>
             <td>0.92</td>
             <td>0.98</td>
@@ -72,7 +72,7 @@
             <td>4.72</td>
         </tr>
         <tr>
-            <td rowspan="2">DrFixD-rainy</td>
+            <td rowspan="2">DrFixD-rainy<br>(📆2024.11.10)</td>
             <td>3×256×256</td>
             <td>0.89</td>
             <td>0.95</td>
@@ -92,8 +92,31 @@
             <td>0.45</td>
             <td>4.72</td>
         </tr>
+            <tr>
+            <td rowspan="2">BDDA<br>(🔬waiting)</td>
+            <td>3×256×256</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0.64</td>
+            <td>0.47</td>
+            <td>1.08</td>
+            <td>4.45</td>
+        </tr>
+        <tr>
+            <td>3×512×512</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>🔬</td>
+            <td>🔬</td>
+            <td>🔬</td>
+            <td>4.72</td>
+        </tr>
 </table>
 </div>
+
+
 
 
 
