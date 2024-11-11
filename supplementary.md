@@ -26,7 +26,7 @@ When such stimuli induce attention shifts, driver attention manifests as changes
     <img src="fig\case3.jpg" width="900" height="auto" />
 </div>
 
-### (4) Performance of different resolution for our model. (TrafficGaze)
+### (4) Performance of different resolution for our model. ($256^2$, $512^2$)
 
 As shown in the table below, the experimental results demonstrate that: these metrics result in only a slight improvement over 256×256 input images. However, it has a FLOPs of 4.72, which significantly increases the computational amount.
 
@@ -44,7 +44,7 @@ As shown in the table below, the experimental results demonstrate that: these me
             <th>FLOPs↓</th>
         </tr>
         <tr>
-            <td>TrafficGaze</td>
+            <td rowspan="2">TrafficGaze</td>
             <td>3×256×256</td>
             <td>0.92</td>
             <td>0.98</td>
@@ -55,7 +55,6 @@ As shown in the table below, the experimental results demonstrate that: these me
             <td>4.45</td>
         </tr>
         <tr>
-            <td>TrafficGaze</td>
             <td>3×512×512</td>
             <td>0.92</td>
             <td>0.98</td>
@@ -65,5 +64,29 @@ As shown in the table below, the experimental results demonstrate that: these me
             <td>0.26</td>
             <td>4.72</td>
         </tr>
-    </table>
+        <tr>
+            <td rowspan="2">DrFixD-rainy</td>
+            <td>3×256×256</td>
+            <td>0.89</td>
+            <td>0.95</td>
+            <td>4.31</td>
+            <td>0.86</td>
+            <td>0.68</td>
+            <td>0.47</td>
+            <td>4.45</td>
+        </tr>
+        <tr>
+            <td>3×512×512</td>
+            <td>0.90</td>
+            <td>0.96</td>
+            <td>4.26</td>
+            <td>0.86</td>
+            <td>0.69</td>
+            <td>0.45</td>
+            <td>4.72</td>
+        </tr>
+</table>
 </div>
+
+
+

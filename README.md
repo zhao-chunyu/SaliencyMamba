@@ -35,7 +35,7 @@
 <img src="fig\cases.gif" width="800" height="auto" />
 </div>
 
-- - **Performance of different resolution for SalM2. (TrafficGaze)**
+- - **Performance of different resolution for $SalM^2$. ($256^2$,$512^2$)**
 
 <div align="center">
 <table>
@@ -51,7 +51,7 @@
             <th>FLOPs↓</th>
         </tr>
         <tr>
-            <td>TrafficGaze</td>
+            <td rowspan="2">TrafficGaze</td>
             <td>3×256×256</td>
             <td>0.92</td>
             <td>0.98</td>
@@ -62,7 +62,6 @@
             <td>4.45</td>
         </tr>
         <tr>
-            <td>TrafficGaze</td>
             <td>3×512×512</td>
             <td>0.92</td>
             <td>0.98</td>
@@ -72,8 +71,30 @@
             <td>0.26</td>
             <td>4.72</td>
         </tr>
-    </table>
+        <tr>
+            <td rowspan="2">DrFixD-rainy</td>
+            <td>3×256×256</td>
+            <td>0.89</td>
+            <td>0.95</td>
+            <td>4.31</td>
+            <td>0.86</td>
+            <td>0.68</td>
+            <td>0.47</td>
+            <td>4.45</td>
+        </tr>
+        <tr>
+            <td>3×512×512</td>
+            <td>0.90</td>
+            <td>0.96</td>
+            <td>4.26</td>
+            <td>0.86</td>
+            <td>0.69</td>
+            <td>0.45</td>
+            <td>4.72</td>
+        </tr>
+</table>
 </div>
+
 
 
 
