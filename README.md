@@ -35,7 +35,7 @@
 <img src="fig\cases.gif" width="800" height="auto" />
 </div>
 
-- - **Performance of different resolution for $SalM^2$. ($256^2$,$512^2$)**
+- - **Performance of different resolution for $SalM^2$. ($256^2$, $512^2$)**
 
 <div align="center">
 <table>
