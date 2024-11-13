@@ -86,7 +86,7 @@ As shown in the table below, the experimental results demonstrate that: these me
             <td>4.72</td>
         </tr>
             <tr>
-            <td rowspan="2">BDDA<br>(🔬waiting)</td>
+            <td rowspan="2">BDDA<br>(📆2024.11.12)</td>
             <td>3×256×256</td>
             <td>-</td>
             <td>-</td>
@@ -101,13 +101,11 @@ As shown in the table below, the experimental results demonstrate that: these me
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td>🔬</td>
-            <td>🔬</td>
-            <td>🔬</td>
+            <td>0.64</td>
+            <td>0.47</td>
+            <td>1.09</td>
             <td>4.72</td>
         </tr>
 </table>
 </div>
-
-
 

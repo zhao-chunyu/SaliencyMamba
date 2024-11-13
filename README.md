@@ -93,7 +93,7 @@
             <td>4.72</td>
         </tr>
             <tr>
-            <td rowspan="2">BDDA<br>(🔬waiting)</td>
+            <td rowspan="2">BDDA<br>(📆2024.11.12)</td>
             <td>3×256×256</td>
             <td>-</td>
             <td>-</td>
@@ -108,18 +108,13 @@
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td>🔬</td>
-            <td>🔬</td>
-            <td>🔬</td>
+            <td>0.64</td>
+            <td>0.47</td>
+            <td>1.09</td>
             <td>4.72</td>
         </tr>
 </table>
 </div>
-
-
-
-
-
 
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
 
