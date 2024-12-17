@@ -3,10 +3,11 @@
   <br/>
 <b>We collect datasets and other popular model codes.</b>
   <br/>
-<b>We will give a series of instructions and demo files.</b>
+<b>We give a series of instructions and demo files.</b>
   <br/>
-<b>We promise to release all code after the paper is accepted.</b>
+<b>We release all code in this code repository.</b>
 </div>
+
 
 
 <div align="center">
@@ -17,9 +18,11 @@
 
 ## 🔥Update
 
-- **2024/11/08**: ***update supplementary materials***. [Details](supplementary.md)
+- **2024/12/10**: ***Our paper is accepted by AAAI🎉🎉🎉***.
 
-- - **We release all the runnable code. 🎉🎊**
+- **2024/11/08**: ***Update supplementary materials***. [Details](supplementary.md)
+
+- - **We release all the runnable code. **
 
 - - **Comparison of Runtime and GPU memory.** 
   
