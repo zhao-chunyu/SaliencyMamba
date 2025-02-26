@@ -7,132 +7,38 @@
   <br/>
 <b>We release all code in this code repository.</b>
 </div>
-
-
+<div align="center">
+<b>Authors: Chunyu Zhao, Wentao Mu, Xian Zhou, Wenbo Liu, Fei Yan, Tao Deng</b>
+</div>
 
 <div align="center">
   <img src="fig/demo-example1.gif" alt="BDDA-1" width="200" height="auto" />
   <img src="fig/demo-example2.gif" alt="BDDA-2" width="200" height="auto" />
   <img src="fig/demo-example3.gif" alt="BDDA-2" width="200" height="auto" />
 </div>
-
 ## 🔥Update
 
-- **2024/12/10**: ***Our paper is accepted by AAAI🎉🎉🎉***.
-
+- **2024/12/10**: ***Our paper is accepted by AAAI🎉🎉🎉***. <a href="https://arxiv.org/pdf/2502.16214" target="_blank"><img src="fig/arxiv_.png" alt="arxiv" width="50" height="auto" /></a>
+  
 - **2024/11/08**: ***Update supplementary materials***. [Details](supplementary.md)
-
-- - **We release all the runnable code. **
-
-- - **Comparison of Runtime and GPU memory.** 
+- **We release all the runnable code. **
   
-    Better than the lightest network in the paper (Deng et al. 2019).
+- **Comparison of Runtime and GPU memory.** 
   
-<div align="center">
-<img src="fig\runtime.jpg" width="800" height="auto" />
-</div>
-
-- - **Driver attention shift cases. (+15 cases)**
-
-<div align="center">
-<img src="fig\cases.gif" width="800" height="auto" />
-</div>
-
-- - **Performance of different resolution for $SalM^2$. ($256^2$, $512^2$)**
-
-<div align="center">
-<table>
-        <tr>
-            <th>Dataset</th>
-            <th>Image size</th>
-            <th>AUC_B↑</th>
-            <th>AUC_J↑</th>
-            <th>NSS↑</th>
-            <th>CC↑</th>
-            <th>SIM↑</th>
-            <th>KLD↓</th>
-            <th>FLOPs↓</th>
-        </tr>
-        <tr>
-            <td rowspan="2">TrafficGaze<br>(📆2024.11.08)</td>
-            <td>3×256×256</td>
-            <td>0.92</td>
-            <td>0.98</td>
-            <td>5.90</td>
-            <td>0.94</td>
-            <td>0.78</td>
-            <td>0.28</td>
-            <td>4.45</td>
-        </tr>
-        <tr>
-            <td>3×512×512</td>
-            <td>0.92</td>
-            <td>0.98</td>
-            <td>6.04</td>
-            <td>0.95</td>
-            <td>0.80</td>
-            <td>0.26</td>
-            <td>4.72</td>
-        </tr>
-        <tr>
-            <td rowspan="2">DrFixD-rainy<br>(📆2024.11.10)</td>
-            <td>3×256×256</td>
-            <td>0.89</td>
-            <td>0.95</td>
-            <td>4.31</td>
-            <td>0.86</td>
-            <td>0.68</td>
-            <td>0.47</td>
-            <td>4.45</td>
-        </tr>
-        <tr>
-            <td>3×512×512</td>
-            <td>0.90</td>
-            <td>0.96</td>
-            <td>4.26</td>
-            <td>0.86</td>
-            <td>0.69</td>
-            <td>0.45</td>
-            <td>4.72</td>
-        </tr>
-            <tr>
-            <td rowspan="2">BDDA<br>(📆2024.11.12)</td>
-            <td>3×256×256</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>0.64</td>
-            <td>0.47</td>
-            <td>1.08</td>
-            <td>4.45</td>
-        </tr>
-        <tr>
-            <td>3×512×512</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>0.64</td>
-            <td>0.47</td>
-            <td>1.09</td>
-            <td>4.72</td>
-        </tr>
-</table>
-</div>
-
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
 
-- **2024/07/24**: All the code and models are completed.
-
-- - our model ($SalM^2$)
+- **2024/07/25**: How to use our model ($SalM^2$).
     - How to train:  [command](#Run-train ) & [script](#Run-train )
     - How to test:  [command](#Run-test ) & [script](#Run-test )
   - compare model
     - Static prediction model:  [command](#Run-train ) & [script](#Run-train )
     - Dynamic prediction model:  [command](#Run-train ) & [script](#Run-train )
-  
+
+- **2024/07/24**: All the code and models are completed.
+
 - **2024/07/05**: We collect the possible datasets to use, and make a uniform dataloader.
 
-- **2024/06/14**: 🤩Our model is proposed !
+- **2024/06/14**: Our model is proposed !
 
 ## 💬Motivation
 
@@ -337,7 +243,7 @@ python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 </div>
 
 
-## ✨ Downstream Tasks
+## ✨ Downstream Tasks**[🔁](#🔥Update)**
 
 *Some interesting downstream tasks are shown here, and our work will be of significant research interest.*
 
@@ -359,5 +265,13 @@ python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 If you find this repository useful, please use the following BibTeX entry for citation.
 
 ```python
-wait accepted
+@inproceedings{zhao2025salmmamba,
+  title={SalM²: An Extremely Lightweight Saliency Mamba Model for Real-Time Cognitive Awareness of Driver Attention},
+  author={Zhao, Chunyu; Wentao Mu; Xian Zhou; Wenbo Liu; Fei Yan; Tao Deng},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={},
+  number={},
+  pages={},
+  year={2025}
+}
 ```
