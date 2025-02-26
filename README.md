@@ -1,4 +1,5 @@
 <div align="center">
+<a name="start-anchor"></a>
   <img src="fig\title_logo.jpg" alt="logo" width="600" height="auto" />
   <br/>
 <b>We collect datasets and other popular model codes.</b>
@@ -8,7 +9,7 @@
 <b>We release all code in this code repository.</b>
 </div>
 <div align="center">
-<b>Authors: Chunyu Zhao, Wentao Mu, Xian Zhou, Wenbo Liu, Fei Yan, Tao Deng</b>
+<b>Authors: Chunyu Zhao, Wentao Mu, Xian Zhou, Wenbo Liu, Fei Yan, Tao Deng*</b>
 </div>
 
 <div align="center">
@@ -16,11 +17,13 @@
   <img src="fig/demo-example2.gif" alt="BDDA-2" width="200" height="auto" />
   <img src="fig/demo-example3.gif" alt="BDDA-2" width="200" height="auto" />
 </div>
+
 ## 🔥Update
 
 - **2024/12/10**: ***Our paper is accepted by AAAI🎉🎉🎉***. <a href="https://arxiv.org/pdf/2502.16214" target="_blank"><img src="fig/arxiv_.png" alt="arxiv" width="50" height="auto" /></a>
   
 - **2024/11/08**: ***Update supplementary materials***. [Details](supplementary.md)
+
 - **We release all the runnable code. **
   
 - **Comparison of Runtime and GPU memory.** 
@@ -243,7 +246,7 @@ python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 </div>
 
 
-## ✨ Downstream Tasks**[🔁](#🔥Update)**
+## ✨ Downstream Tasks **[🔁](#🔥Update)**
 
 *Some interesting downstream tasks are shown here, and our work will be of significant research interest.*
 
@@ -261,6 +264,8 @@ python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 - ***Other downstream tasks***......
 
 ## ⭐️ Cite **[🔁](#🔥Update)**
+
+[跳转到自定义锚点](#start-anchor)
 
 If you find this repository useful, please use the following BibTeX entry for citation.
 
