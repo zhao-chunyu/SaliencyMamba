@@ -1,17 +1,15 @@
 <div align="center">
 <a name="start-anchor"></a>
+</div>
+<div align="center">
   <img src="fig\title_logo.jpg" alt="logo" width="600" height="auto" />
-  <br/>
-<b>We collect datasets and other popular model codes.</b>
-  <br/>
-<b>We give a series of instructions and demo files.</b>
-  <br/>
-<b>We release all code in this code repository.</b>
 </div>
 <div align="center">
 <b>Authors: Chunyu Zhao, Wentao Mu, Xian Zhou, Wenbo Liu, Fei Yan, Tao Deng*</b>
 </div>
-
+<div align="center">
+<b>Email: zhaochunyu@my.swjtu.edu.cn || *: corresponding author</b>
+</div>
 <div align="center">
   <img src="fig/demo-example1.gif" alt="BDDA-1" width="200" height="auto" />
   <img src="fig/demo-example2.gif" alt="BDDA-2" width="200" height="auto" />
@@ -43,7 +41,7 @@
 
 - **2024/06/14**: Our model is proposed !
 
-## 💬Motivation
+## 💬Motivation [🔁](#start-anchor)
 
 ​	**(1) Using semantic information to guide driver attention.**
 <div align="center">
@@ -57,13 +55,13 @@
 </div>
 <b>Solution:</b> We develop a highly lightweight saliency prediction network based on the latest Mamba framework, with only <b>0.0785M</b> (<b>88% reduction compared to SOTA</b>) parameters and <b>4.45G FLOPs</b> (<b>37% reduction compared to SOTA</b>).
 
-## ⚡Proposed Model
+## ⚡Proposed Model [🔁](#start-anchor)
 
 we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving scene semantic information to guide "Bottom-up" driving scene image information to simulate human drivers' attention allocation. 
 
 <img src="fig\overview.png" style="zoom: 100%;">
 
-## 📖Datasets
+## 📖Datasets [🔁](#start-anchor)
 <div align="center">
 <table>
   <thead>
@@ -176,7 +174,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 </table>
 </div>
 
-## 🛠️ Deployment **[🔁](#🔥Update)**
+## 🛠️ Deployment [🔁](#start-anchor)
 
 ### 	Run train 
 
@@ -237,7 +235,7 @@ python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 </table>
 </div>
 
-## 🚀 Live Demo **[🔁](#🔥Update)**
+## 🚀 Live Demo [🔁](#start-anchor)
 
 <div align="center">
   <img src="fig/demo-example1.gif" alt="BDDA-1" width="230" height="auto" />
@@ -246,7 +244,7 @@ python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 </div>
 
 
-## ✨ Downstream Tasks **[🔁](#🔥Update)**
+## ✨ Downstream Tasks [🔁](#start-anchor)
 
 *Some interesting downstream tasks are shown here, and our work will be of significant research interest.*
 
@@ -263,9 +261,8 @@ python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 
 - ***Other downstream tasks***......
 
-## ⭐️ Cite **[🔁](#🔥Update)**
+## ⭐️ Cite [🔁](#start-anchor)
 
-[跳转到自定义锚点](#start-anchor)
 
 If you find this repository useful, please use the following BibTeX entry for citation.
 
