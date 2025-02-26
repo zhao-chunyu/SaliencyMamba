@@ -20,11 +20,11 @@
 
 ## 🔥Update
 
-- **2024/12/10**: ***Our paper is accepted by AAAI🎉🎉🎉***. <a href="https://arxiv.org/pdf/2502.16214" target="_blank"><img src="fig/arxiv_.png" alt="arxiv" width="50" height="auto" /></a>
+- **2024/12/10**: ***Our paper is accepted by AAAI🎉🎉🎉***. <a href="https://arxiv.org/pdf/2502.16214" ><img src="fig/arxiv_.png" alt="arxiv" width="50" height="auto" /></a>
   
 - **2024/11/08**: ***Update supplementary materials***. [Details](supplementary.md)
 
-- **We release all the runnable code. **
+- **We release all the runnable code.**
   
 - **Comparison of Runtime and GPU memory.** 
   
