@@ -22,9 +22,13 @@
   
 - **2024/11/08**: ***Update supplementary materials***. [Details](supplementary.md)
 
-- **We release all the runnable code.**
-  
-- **Comparison of Runtime and GPU memory.** 
+    - **We release all the runnable code.**
+
+    - **We compare the  runtime and the GPU memory.** 
+
+    - **We add more driver attention shift cases.**
+
+    - **We supplement the experiments at different resolutions.**
   
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
 
