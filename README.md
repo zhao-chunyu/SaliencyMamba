@@ -273,7 +273,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 @inproceedings{zhao2025salmmamba,
   title={SalM²: An Extremely Lightweight Saliency Mamba Model for Real-Time Cognitive Awareness of Driver Attention},
-  author={Zhao, Chunyu; Wentao Mu; Xian Zhou; Wenbo Liu; Fei Yan; Tao Deng},
+  author={Chunyu Zhao; Wentao Mu; Xian Zhou; Wenbo Liu; Fei Yan; Tao Deng},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   volume={},
   number={},
