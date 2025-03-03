@@ -63,7 +63,7 @@
 
 we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving scene semantic information to guide "Bottom-up" driving scene image information to simulate human drivers' attention allocation. 
 
-<img src="fig\overview.png" style="zoom: 100%;">
+<img src="fig\overview.jpg" style="zoom: 100%;">
 
 ## 📖Datasets [🔁](#start-anchor)
 <div align="center">
