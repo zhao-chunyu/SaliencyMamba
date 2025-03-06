@@ -206,7 +206,7 @@ python train.py --network salmm --b 32 --g 0 --category xxx --root xxx
 
 ### 	Run test 
 
-##### 		[1] Official test [⭐⭐⭐]
+#### 		[1] Official test [⭐⭐⭐]
 
 We calculate the predicted values and then use `Matlab` for the prediction. [More details](metrics/README.md)
 
@@ -215,7 +215,7 @@ cd metrics
 chmod +x run_matlab.sh
 ```
 
-##### 		[2] General test
+#### 		[2] General test
 
 Although `Python` testing is more convenient, our test benchmark is based on the previous work (`CDNN`、`DrFixD-rainy`、......), and the results calculated by `Python` do not match those calculated by `Matlab`. We have provided a `Python` test code, which is basically consistent with `Matlab` in terms of `CC`, `SIM`, and `KLD` metrics.
 
