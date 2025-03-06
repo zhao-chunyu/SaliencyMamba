@@ -18,26 +18,32 @@
 
 ## 🔥Update
 
+- **2025/03/03**: ***Complete the contents of the code repository***.
+	- Datasets upload: `Trafficgaze`✅, `DrFixD-rainy`✅, `BDDA`
+	- Trained weights: `Trafficgaze`, `DrFixD-rainy`, `BDDA`
+	- Environment configuration: [`command`](#Environment)✅
+	- Visualization code: our code in repository. `visualization.py`✅
+	- Evaluation metrics code: our code in repository. `python`✅, `Matlab`✅
+
 - **2024/12/10**: ***Our paper is accepted by AAAI🎉🎉🎉***. <a href="https://arxiv.org/pdf/2502.16214" ><img src="fig/arxiv_.png" alt="arxiv" width="50" height="auto" /></a>
-  
+
 - **2024/11/08**: ***Update supplementary materials***. [Details](supplementary.md)
-
-    - **We release all the runnable code.**
-
-    - **We compare the  runtime and the GPU memory.** 
-
-    - **We add more driver attention shift cases.**
-
-    - **We supplement the experiments at different resolutions.**
+- We release all the runnable code.
+  
+- We compare the  runtime and the GPU memory. 
+  
+- We add more driver attention shift cases.
+  
+- We supplement the experiments at different resolutions.
   
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
 
 - **2024/07/25**: How to use our model ($SalM^2$).
-    - How to train:  [command](#Run-train ) & [script](#Run-train )
-    - How to test:  [command](#Run-test ) & [script](#Run-test )
+    - How to train:  [command](#Run-train ) & [script](deployment.md)
+    - How to test:  [command](#Run-test ) & [script](deployment.md)
   - compare model
-    - Static prediction model:  [command](#Run-train ) & [script](#Run-train )
-    - Dynamic prediction model:  [command](#Run-train ) & [script](#Run-train )
+    - Static prediction model:  [command](#Run-train ) & [script](deployment.md)
+    - Dynamic prediction model:  [command](#Run-train ) & [script](deployment.md)
 
 - **2024/07/24**: All the code and models are completed.
 
@@ -104,11 +110,11 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 </div>
 【note】 For all datasets we will provide our download link with the official link. Please choose according to your needs.
 
-> (1) **TrafficGaze**: This dataset we uploaded in [link](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze").
+> (1) **TrafficGaze**: This dataset we uploaded in BaiduYun (code: SALM) [<a href="https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM" ><img src="fig/baiduyun.jpg" alt="baidunyu" width="50" height="auto" /></a>](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze").
 >
-> (2) **DrFixD-rainy**: This dataset we uploaded in [link](www.baidu.com "Download DrFixD-rainy"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/DrFixD-rainy "Official DrFixD-rainy").
+> (2) **DrFixD-rainy**: This dataset we uploaded in BaiduYun (code: SALM) [<a href="https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM" ><img src="fig/baiduyun.jpg" alt="baidunyu" width="50" height="auto" /></a>](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/DrFixD-rainy "Official DrFixD-rainy").
 >
-> (3) **BDDA**: This dataset we uploaded in [link](www.baidu.com "Download BDDA"). Some camera videos and gazemap videos frame rate inconsistency, we have matched and cropped them. Some camera videos do not correspond to gazemap videos, we have filtered them. Official web in [link](https://deepdrive.berkeley.edu/ "Official BDDA").
+> (3) **BDDA**: This dataset we uploaded in link (wait). Some camera videos and gazemap videos frame rate inconsistency, we have matched and cropped them. Some camera videos do not correspond to gazemap videos, we have filtered them. Official web in [link](https://deepdrive.berkeley.edu/ "Official BDDA").
 
 <div align="center">
 <table style="width: 100%; table-layout: auto;">
@@ -180,45 +186,66 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 
 ## 🛠️ Deployment [🔁](#start-anchor)
 
+### 	Environment
+
+​	👉*If you have downloaded our `repository code` and installed `PyTorch` and `CUDA`.*  [More details](deployment.md)
+
+```python
+pip install requirements.txt
+pip install -e utils/models/causal-conv1d
+pip install -e utils/models/mamba
+```
+
 ### 	Run train 
 
-​	👉*If you wish to train with our model, please use the proceeding steps below.*
-
-1. Train our model.  You can use `--category` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, `BDDA`. `--b` sets batch size, `--g` sets id of cuda.
+​	👉*If you wish to train with our model, please use the command below.* [More details](deployment.md)
 
 ```python
 python train.py --network salmm --b 32 --g 0 --category xxx --root xxx
 ```
 
-​	2. Train compare model. If the model is a *<u>**static prediction method**</u>*, run the following command.
-
-```python
-python train.py --network xxx --b 32 --g 1 --category xxx --root xxx
-```
-
-​	3. Train compare model. If the model is a ***<u>dynamic prediction method</u>***, set `--seq_len` and run the following command.
-
-```python
-python train.py --network xxx --b 32 --seq_len 6 --g 2 --category xxx --root xxx
-```
-
 ### 	Run test 
 
-​	👉*If you wish to make predictions directly using our model results, you can do so using the proceeding steps.*
+##### 		[1] Official test [⭐⭐⭐]
 
-​	1. Test our model.
+we calculate the predicted values and then use `Matlab` for the prediction. [More details](metrics/README.md)
 
-​		(a) You need to download our trained model file in [link](www.baidu.com "Download salmm model.tar") and put it to the specified folder path.
+```python
+cd metrics
+chmod +x run_matlab.sh
+```
 
-​		(b) You should use `--category` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, `BDDA`. Run the following command.
+##### 		[2] General test
+
+Although `Python` testing is more convenient, our test benchmark is based on the previous work (`CDNN`、`DrFixD-rainy`、......), and the results calculated by `Python` do not match those calculated by `Matlab`. We have provided a `Python` test code, which is basically consistent with `Matlab` in terms of `CC`, `SIM`, and `KLD` metrics.
+
+​	👉*If you wish to make predictions directly using our model results, you can do so using the command.*  [More details](deployment.md)
 
 ```python
 python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
 ```
 
-​	👉If you are unable to adapt your environment for other reasons, you can also download our predictions directly.
+1. Our trained weights. (We are preparing. Please wait.)
 
-​	2. Download prediction results.
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th><i>$SalM^2$</i> for <i>TrafficGaze</i></th>
+      <th><i>$SalM^2$</i> for <i>DrFixD-rainy</i></th>
+      <th><i>$SalM^2$</i> for <i>BDDA</i></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://www.baidu.com" title="trained for TrafficGaze">trained for TrafficGaze</a></td>
+      <td><a href="http://www.baidu.com" title="trained for DrFixD-rainy">trained for DrFixD-rainy</a></td>
+      <td><a href="http://www.baidu.com" title="trained for BDDA">trained for BDDA</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+2. Our prediction results. (We are preparing. Please wait.)
 
 <div align="center">
 <table>
@@ -238,7 +265,6 @@ python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
   </tbody>
 </table>
 </div>
-
 ## 🚀 Live Demo [🔁](#start-anchor)
 
 <div align="center">
@@ -268,7 +294,7 @@ python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 ## ⭐️ Cite [🔁](#start-anchor)
 
 
-If you find this repository useful, please use the following BibTeX entry for citation.
+If you find this repository useful, please use the following BibTeX entry for citation  and give us a star⭐.
 
 ```python
 @inproceedings{zhao2025salmmamba,

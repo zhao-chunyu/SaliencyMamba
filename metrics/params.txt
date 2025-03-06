@@ -1,0 +1,4 @@
+DrFixD_rainy
+/data/dataset/CDNN/cdnn-mamba/CAmamba-Rainy/ckpts/googleCAmamba2/model_out0306/
+/home/lwb/matlab/project/sal_metrics/rainy/fixdata/fixdata
+/home/lwb/matlab/project/sal_metrics/rainy/fixdata/test.mat

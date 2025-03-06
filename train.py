@@ -28,7 +28,7 @@ torch.cuda.set_device(int(args.gpu))
 
 date_time = datetime.now().strftime('%Y%m%d-%H:%M:%S')
 
-ckpts = f'ckpts/{args.network}_{date_time}/'
+ckpts = f'ckpts/{args.category}/{args.network}_{date_time}/'
 if not os.path.exists(ckpts):
     os.makedirs(ckpts)
 
@@ -188,7 +188,7 @@ def validate(valid_loader, model, criterion):
                                                                                                            metrics[2] / (i + 1),
                                                                                                            time.time() - start)
             start = time.time()
-               # logging.info(msg)
+            # logging.info(msg)
 
             del input, target, output
             # gc.collect()
@@ -230,14 +230,14 @@ if __name__ == '__main__':
     main()
 
     # evaluate
-    # from evaluate import predict_mat
-    # file_name = f'{ckpts}model_best_{args.network}.tar'
-    # _, _, test_loader = build_dataset(args=args)
-    #
-    # model = build_model(args=args)
-    # model = model.cuda()
-    #
-    # checkpoint = torch.load(file_name)
-    # model.load_state_dict(checkpoint['state_dict'])
-    #
-    # predict_mat(test_loader, model, args)
+    from evaluate_metrics import predict_metrics
+    file_name = f'{ckpts}model_best_{args.network}.tar'
+    _, _, test_loader = build_dataset(args=args)
+
+    model = build_model(args=args)
+    model = model.cuda()
+
+    checkpoint = torch.load(file_name)
+    model.load_state_dict(checkpoint['state_dict'])
+
+    predict_metrics(test_loader, model, ckpts)
