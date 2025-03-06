@@ -128,7 +128,7 @@ def onevisual(model, input_data, saveFolder, save_ori=True, save_pre=True):
         savePlot(img_ori=in_img, img_sal=out_img, saveFullName=saveFullName)
 
 
-def visualization(model, input_data, saveFolder, save_ori=True, save_pre=True):
+def visualization(model, input_data, saveFolder='visualResults', save_ori=True, save_pre=True):
     """
     type of input_data: str, list, .txt, dataloader
     example:
@@ -172,52 +172,13 @@ if __name__ == '__main__':
     # #  test------>next
     _, _, test_loader = build_dataset(args=args)
     ckpts = f'ckpts/{args.category}/{args.test_weight}/'
-    file_name = ckpts + f'model_best_{args.network}2.tar'
-    
-    # model = model
+    file_name = ckpts + f'model_best_{args.network}.tar'
 
     checkpoint = torch.load(file_name, map_location="cpu")
-
-    # 打印所有层的名称
-    print(checkpoint.keys())
-    # exit(0)
-    keys = list(checkpoint['state_dict'].keys())
-
-    output_file = "model_layers2.txt"
-    with open(output_file, "w") as f:
-        for key in keys:
-            f.write(key + "\n")
-
-    # 复制 checkpoint，避免直接修改原数据
-    new_checkpoint = checkpoint.copy()
-
-    # 获取 state_dict 并修改层名称
-    state_dict = checkpoint["state_dict"]
-    new_state_dict = {}
-
-    for key, value in state_dict.items():
-        new_key = key.replace("mode_match", "CrossModelAtt")  # 替换名称
-        new_state_dict[new_key] = value
-
-    # 重新赋值到 checkpoint
-    new_checkpoint["state_dict"] = new_state_dict
-
-    # 保存新的 .tar 文件
-    new_checkpoint_path = ckpts + f'model_best_{args.network}2.tar'
-    torch.save(new_checkpoint, new_checkpoint_path)
-
-    print(f"修改后的权重已保存到 {new_checkpoint_path}")
-
-    exit(0)
 
     model = build_model(args=args).cuda()
     model.load_state_dict(checkpoint['state_dict'])  # 单卡训练加载方式
     # print(model.device)
-
-    # model.load_state_dict({k.replace('module.', ''): v for k, v in checkpoint['state_dict'].items()})  # 多卡训练加载方式
-    # predict_metrics(test_loader, model)
-    
-    # input_data = '1'
     input_str = '/data/dataset/BDDA/images/0002/001.jpg'
     input_list = ['/data/dataset/BDDA/images/0002/002.jpg', '/data/dataset/BDDA/images/0002/003.jpg']
     input_dataloader = test_loader

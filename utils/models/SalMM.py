@@ -427,44 +427,6 @@ class SalMM(nn.Module):
         out0 = F.interpolate(self.final(out1), scale_factor=(2, 2), mode='bilinear',
                              align_corners=True)  # b, num_class, H, W
 
-        # print(f'GPU memory: {torch.cuda.memory_allocated() / 1024 ** 2:.2f} MB')
         return torch.sigmoid(out0), None
 
 
-if __name__ == '__main__':
-    import time
-    b = 1
-    clip_model, _ = clip.load(backbone[id])
-    clip_para = sum([param.nelement() for param in clip_model.parameters()])
-
-    img = torch.randn(size=(b, 3, 512, 512)).cuda()
-    # img = torch.randn(size=(b, 3, 256, 256)).cuda()
-    model = SalMM().cuda()
-    output, _ = model(img)
-    print(output.size())
-    para = sum([param.nelement() for param in model.parameters()])
-    print('paramaters = ', (para-clip_para)/1e6, 'M')
-
-    # model = UltraLight_VM_UNet().cuda()
-    # 测量运行时间
-    # for i in range(10):
-    #     b = 2 ** i
-    #     print(b)
-    #     img = torch.randn(size=(b, 3, 512, 512)).cuda()
-    #     torch.cuda.synchronize()
-    #     start_time = time.time()
-    #
-    #     with torch.no_grad():
-    #         _ = model(img)
-    #
-    #     torch.cuda.synchronize()
-    #     end_time = time.time()
-    #
-    #     print(f'运行时间: {(end_time - start_time) * 1000:.2f} ms')
-
-
-    from fvcore.nn import FlopCountAnalysis
-    flops = FlopCountAnalysis(model, img)
-    # FLOPs ---> GFLOPs
-    gflops = flops.total() / 1e9
-    print(f"GFLOPs: {gflops:.4f}")
