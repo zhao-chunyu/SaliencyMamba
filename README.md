@@ -212,7 +212,7 @@ We calculate the predicted values and then use `Matlab` for the prediction. [Mor
 
 ```python
 cd metrics
-chmod +x run_matlab.sh
+./run_matlab.sh
 ```
 
 #### 		[2] General test

@@ -43,27 +43,27 @@ MATLAB_BIN="/home/zcy/matlab/bin/matlab"
 
 ```python
 BDDA
-/ckpts/BDDA/salmm_20240704-15:46:29/outputMat/
-/ckpts/BDDA/salmm_20240704-15:46:29/outputMat/
-/dataset/BDDA/test.mat
+ckpts/BDDA/salmm_20240704-15:46:29/outputMat/
+ckpts/BDDA/salmm_20240704-15:46:29/outputMat/
+dataset/BDDA/test.mat
 ```
 
 ​		We offer a reference for `TrafficGaze`:
 
 ```python
 TrafficGaze
-/ckpts/TrafficGaze/salmm_20240704-15:46:29/outputMat/
-/dataset/TrafficGaze/fixdata/fixdata
-/dataset/TrafficGaze/fixdata/test.mat
+ckpts/TrafficGaze/salmm_20240704-15:46:29/outputMat/
+dataset/TrafficGaze/fixdata/fixdata
+dataset/TrafficGaze/fixdata/test.mat
 ```
 
 ​		We offer a reference for `DrFixD_rainy`:
 
 ```python
 DrFixD_rainy
-/ckpts/DrFixD_rainy/salmm_20240704-15:46:29/outputMat/
-/dataset/DrFixD_rainy/fixdata/fixdata
-/dataset/DrFixD_rainy/fixdata/test.mat
+ckpts/DrFixD_rainy/salmm_20240704-15:46:29/outputMat/
+dataset/DrFixD_rainy/fixdata/fixdata
+dataset/DrFixD_rainy/fixdata/test.mat
 ```
 
 * Run the `run_matlab.sh` file
