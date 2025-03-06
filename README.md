@@ -208,7 +208,7 @@ python train.py --network salmm --b 32 --g 0 --category xxx --root xxx
 
 ##### 		[1] Official test [⭐⭐⭐]
 
-we calculate the predicted values and then use `Matlab` for the prediction. [More details](metrics/README.md)
+We calculate the predicted values and then use `Matlab` for the prediction. [More details](metrics/README.md)
 
 ```python
 cd metrics
