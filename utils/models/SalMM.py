@@ -14,11 +14,20 @@ from .clip import *
 clip_path = 'clip'
 device = torch.device('cuda:0')
 backbone = ['RN50', 'RN101', 'RN50x4', 'RN50x16', 'ViT-B/32', 'ViT-B/16']
+
 id = 4
 '''
-match_way1: q-->clip  k-->clip  v-->feature
+[official note] The original text contains an error. 
+[official note] We wrongly wrote the model with id=4 as 'RN50x16'.
+[official note] In fact, the backbone used by CLIP is 'ViT-B/32'.
+[official note] reference: https://arxiv.org/pdf/2502.16214
 '''
-class mode_match(nn.Module):
+
+
+'''
+CrossModelAtt: q-->clip  k-->clip  v-->feature
+'''
+class CrossModelAtt(nn.Module):
     def __init__(self, backbone=backbone[id], device=device):
         super().__init__()
         self.device = device
@@ -28,22 +37,17 @@ class mode_match(nn.Module):
         self.gamma = nn.Parameter(torch.zeros(1))
         self.softmax = nn.Softmax(dim=-1)
 
-        self.projector = nn.UpsamplingBilinear2d(scale_factor=2)
-
     def forward(self, img, feature):
         # 1: get clip feature
         b, c, h, w = feature.shape
-        # print(feature.shape)
 
         torch_resize = Resize([224, 224])
         img = torch_resize(img)
 
         with torch.no_grad():
             clip_feature = self.model.encode_image(img)
-            # print(clip_feature.shape)
+            # projector: [B, N] ---> [B, C, H/2, W/2]
             clip_feature = clip_feature.view(b, c, h//2, w//2)
-
-            clip_feature = self.projector(clip_feature)
 
         # print(clip_feature.shape)
         # 2: perception matrix
@@ -90,7 +94,6 @@ class Inception(nn.Module):
 
         self.branch3 = nn.Sequential(
             BasicConv2d(in_channels, ch5x5red, kernel_size=1),
-
             BasicConv2d(ch5x5red, ch5x5, kernel_size=5, padding=2)
         )
 
@@ -105,11 +108,10 @@ class Inception(nn.Module):
         branch3 = self.branch3(x)
         branch4 = self.branch4(x)
 
-        # outputs = [branch1, branch2, branch3, branch4]  # 将4个分支的输出放入到一个列表当中
-        return branch1, branch2, branch3, branch4  # 通过cat函数将这4个分支进行合并，在第一个维度也就是channel深度进行合并
+        return branch1, branch2, branch3, branch4
 
 
-class InceptionLayer(nn.Module):
+class SCPMambaLayer(nn.Module):
     def __init__(self, input_dim, output_dim, d_state=16, d_conv=4, expand=2, dim_=[1, 1, 1, 1, 1, 1]):
         super().__init__()
         self.input_dim = input_dim
@@ -123,28 +125,28 @@ class InceptionLayer(nn.Module):
         self.mamba1 = Mamba(
             d_model=dim_[0],  # Model dimension d_model
             d_state=d_state,  # SSM state expansion factor
-            d_conv=d_conv,  # Local convolution width
-            expand=expand,  # Block expansion factor
+            d_conv=d_conv,    # Local convolution width
+            expand=expand,    # Block expansion factor
         )
         self.mamba2 = Mamba(
             d_model=dim_[2],  # Model dimension d_model
             d_state=d_state,  # SSM state expansion factor
-            d_conv=d_conv,  # Local convolution width
-            expand=expand,  # Block expansion factor
+            d_conv=d_conv,    # Local convolution width
+            expand=expand,    # Block expansion factor
         )
         self.mamba3 = Mamba(
             d_model=dim_[4],  # Model dimension d_model
             d_state=d_state,  # SSM state expansion factor
-            d_conv=d_conv,  # Local convolution width
-            expand=expand,  # Block expansion factor
+            d_conv=d_conv,    # Local convolution width
+            expand=expand,    # Block expansion factor
         )
         self.mamba4 = Mamba(
             d_model=dim_[5],  # Model dimension d_model
             d_state=d_state,  # SSM state expansion factor
-            d_conv=d_conv,  # Local convolution width
-            expand=expand,  # Block expansion factor
+            d_conv=d_conv,    # Local convolution width
+            expand=expand,    # Block expansion factor
         )
-        # self.proj = nn.Linear(input_dim, output_dim)
+        
         self.skip_scale = nn.Parameter(torch.ones(1))
 
         self.Inception = Inception(input_dim, dim_[0], dim_[1], dim_[2], dim_[3], dim_[4], dim_[5])
@@ -199,7 +201,6 @@ class InceptionLayer(nn.Module):
         out = x_mamba.transpose(-1, -2).reshape(B, self.output_dim, *img_dims)
         # print('out', out.shape)
         return out
-
 
 class Channel_Att_Bridge(nn.Module):
     def __init__(self, c_list, split_att='fc'):
@@ -272,20 +273,16 @@ class SC_Att_Bridge(nn.Module):
         
     def forward(self, t1, t2, t3, t4, t5):
         r1, r2, r3, r4, r5 = t1, t2, t3, t4, t5
-
         satt1, satt2, satt3, satt4, satt5 = self.satt(t1, t2, t3, t4, t5)
         t1, t2, t3, t4, t5 = satt1 * t1, satt2 * t2, satt3 * t3, satt4 * t4, satt5 * t5
-
         r1_, r2_, r3_, r4_, r5_ = t1, t2, t3, t4, t5
         t1, t2, t3, t4, t5 = t1 + r1, t2 + r2, t3 + r3, t4 + r4, t5 + r5
-
         catt1, catt2, catt3, catt4, catt5 = self.catt(t1, t2, t3, t4, t5)
         t1, t2, t3, t4, t5 = catt1 * t1, catt2 * t2, catt3 * t3, catt4 * t4, catt5 * t5
-
         return t1 + r1_, t2 + r2_, t3 + r3_, t4 + r4_, t5 + r5_
     
 
-class SalMM(nn.Module):
+class SalMambaModel(nn.Module):
     
     def __init__(self, num_classes=1, input_channels=3, c_list=[8,12,16,16,24,32],
                 split_att='fc', bridge=True):
@@ -303,27 +300,27 @@ class SalMM(nn.Module):
             nn.Conv2d(c_list[1], c_list[2], 3, stride=1, padding=1),
         )
         self.encoder4 = nn.Sequential(
-            InceptionLayer(input_dim=c_list[2], output_dim=c_list[3], dim_=[6, 2, 4, 4, 2, 4])  # 16
+            SCPMambaLayer(input_dim=c_list[2], output_dim=c_list[3], dim_=[6, 2, 4, 4, 2, 4])  # 16
         )
         self.encoder5 = nn.Sequential(
-            InceptionLayer(input_dim=c_list[3], output_dim=c_list[4], dim_=[9, 3, 6, 6, 3, 6])  # 24
+            SCPMambaLayer(input_dim=c_list[3], output_dim=c_list[4], dim_=[9, 3, 6, 6, 3, 6])  # 24
         )
         self.encoder6 = nn.Sequential(
-            InceptionLayer(input_dim=c_list[4], output_dim=c_list[5], dim_=[12, 4, 8, 8, 4, 8])  # 32
+            SCPMambaLayer(input_dim=c_list[4], output_dim=c_list[5], dim_=[12, 4, 8, 8, 4, 8])  # 32
         )
 
         if bridge: 
             self.scab = SC_Att_Bridge(c_list, split_att)
-            print('SC_Att_Bridge was used')
+            # print('SC_Att_Bridge was used')
         
         self.decoder1 = nn.Sequential(
-            InceptionLayer(input_dim=c_list[5], output_dim=c_list[4], dim_=[9, 3, 6, 6, 3, 6])  # 24
+            SCPMambaLayer(input_dim=c_list[5], output_dim=c_list[4], dim_=[9, 3, 6, 6, 3, 6])  # 24
         ) 
         self.decoder2 = nn.Sequential(
-            InceptionLayer(input_dim=c_list[4], output_dim=c_list[3], dim_=[6, 2, 4, 4, 2, 4])  # 16
+            SCPMambaLayer(input_dim=c_list[4], output_dim=c_list[3], dim_=[6, 2, 4, 4, 2, 4])  # 16
         ) 
         self.decoder3 = nn.Sequential(
-            InceptionLayer(input_dim=c_list[3], output_dim=c_list[2], dim_=[6, 2, 4, 4, 2, 4])  # 16
+            SCPMambaLayer(input_dim=c_list[3], output_dim=c_list[2], dim_=[6, 2, 4, 4, 2, 4])  # 16
         )  
         self.decoder4 = nn.Sequential(
             nn.Conv2d(c_list[2], c_list[1], 3, stride=1, padding=1),
@@ -346,7 +343,7 @@ class SalMM(nn.Module):
 
         self.apply(self._init_weights)
 
-        self.mode_match = mode_match()
+        self.CrossModelAtt = CrossModelAtt()
 
         self.conv5 = nn.Conv2d(48, 24, kernel_size=3, padding=1)
         self.conv4 = nn.Conv2d(32, 16, kernel_size=3, padding=1)
@@ -393,7 +390,8 @@ class SalMM(nn.Module):
         out = F.gelu(self.encoder6(out)) # b, c5, H/32, W/32
 
         # ================================================================
-        out = self.mode_match(x, out)
+        # Cross-Model Attention
+        out = self.CrossModelAtt(x, out)
         # ================================================================
 
         out5 = F.gelu(self.dbn1(self.decoder1(out)))  # b, c4, H/32, W/32
@@ -428,5 +426,3 @@ class SalMM(nn.Module):
                              align_corners=True)  # b, num_class, H, W
 
         return torch.sigmoid(out0), None
-
-
