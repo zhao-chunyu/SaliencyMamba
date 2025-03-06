@@ -117,7 +117,7 @@ python evaluate_metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 ​		(b) You should use `--category` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, `BDDA`. Run the following command.
 
 ```python
-python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
+python evaluate_metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
 ```
 
 ​	👉If you are unable to adapt your environment for other reasons, you can also download our predictions directly.
