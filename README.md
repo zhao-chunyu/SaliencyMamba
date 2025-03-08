@@ -27,14 +27,7 @@
 - **2024/12/10**: ***Our paper is accepted by AAAI🎉🎉🎉***. <a href="https://arxiv.org/pdf/2502.16214" ><img src="fig/arxiv_.png" alt="arxiv" width="50" height="auto" /></a>
 
 - **2024/11/08**: ***Update supplementary materials***. [Details](supplementary.md)
-- We release all the runnable code.
-  
-- We compare the  runtime and the GPU memory. 
-  
-- We add more driver attention shift cases.
-  
-- We supplement the experiments at different resolutions.
-  
+
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
 
 - **2024/07/25**: How to use our model ($SalM^2$).
@@ -197,7 +190,7 @@ pip install -e utils/models/mamba
 
 ### 	Run train 
 
-​	👉*If you wish to train with our model, please use the command below.* [More details](deployment.md#(2)-Run-train)
+​	👉*If you wish to train with our model, please use the command below.* [More details](deployment.md)
 
 ```python
 python train.py --network salmm --b 32 --g 0 --category xxx --root xxx
