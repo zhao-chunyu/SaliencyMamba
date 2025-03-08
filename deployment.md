@@ -143,6 +143,35 @@ python evaluate_metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 </table>
 </div>
 
+### 	(4) Run visualization
+
+We also offer visualized code. Visualization can support the input of various types of data such as `str`, `list`, and `dataloader`.
+
+​	1. input a dataloader
+
+​	👉*If you want to visualize all the data of a certain dataset directly, you can use the following command.*
+
+```python
+python visualization.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
+```
+
+​	2. input a string
+
+​	👉*If you input a string (`str` : `'rootpath/0001/0001.jpg'`), please first modify the input in the visualization.py file, and then run the code.*
+
+```python
+python visualization.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
+```
+
+​	3. input a list
+
+​	👉*If you input a list (`list` : `['rootpath/0001/0001.jpg', 'rootpath/0001/0001.jpg', ......]`), please first modify the input in the visualization.py file, and then run the code.*
+
+```python
+python visualization.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
+```
+
+
 
 If you find this repository useful, please use the following BibTeX entry for citation and give us a star⭐.
 

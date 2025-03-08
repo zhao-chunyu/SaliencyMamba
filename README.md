@@ -19,12 +19,11 @@
 ## 🔥Update
 
 - **2025/03/03**: ***Complete the contents of the code repository***.
-	- Datasets upload: `Trafficgaze`✅, `DrFixD-rainy`✅, `BDDA`
-	- Trained weights: `Trafficgaze`, `DrFixD-rainy`, `BDDA`
-	- Environment configuration: [`command`](#Environment)✅
-	- Visualization code: our code in repository. `visualization.py`✅
-	- Evaluation metrics code: our code in repository. `python`✅, `Matlab`✅
-
+	- Datasets upload: `Trafficgaze`✅, `DrFixD-rainy`✅, `BDDA`✅
+	- Environment configuration: [`environment`](#Environment)✅
+	- Visualization code: our code in repository. [`visualization`](#Run-visualization)✅
+	- Evaluation metrics code: our code in repository. `python`✅, [`Matlab (official)`](metrics/README.md)✅
+	
 - **2024/12/10**: ***Our paper is accepted by AAAI🎉🎉🎉***. <a href="https://arxiv.org/pdf/2502.16214" ><img src="fig/arxiv_.png" alt="arxiv" width="50" height="auto" /></a>
 
 - **2024/11/08**: ***Update supplementary materials***. [Details](supplementary.md)
@@ -112,9 +111,9 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 
 > (1) **TrafficGaze**: This dataset we uploaded in BaiduYun (code: SALM) [<a href="https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM" ><img src="fig/baiduyun.jpg" alt="baidunyu" width="50" height="auto" /></a>](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze").
 >
-> (2) **DrFixD-rainy**: This dataset we uploaded in BaiduYun (code: SALM) [<a href="https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM" ><img src="fig/baiduyun.jpg" alt="baidunyu" width="50" height="auto" /></a>](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/DrFixD-rainy "Official DrFixD-rainy").
+> (2) **DrFixD-rainy**: This dataset we uploaded in BaiduYun (code: SALM) [<a href="https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM" ><img src="fig/baiduyun.jpg" alt="baidunyu" width="50" height="auto" /></a>](www.baidu.com "Download DrFixD-rainy"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/DrFixD-rainy "Official DrFixD-rainy").
 >
-> (3) **BDDA**: This dataset we uploaded in link (wait). Some camera videos and gazemap videos frame rate inconsistency, we have matched and cropped them. Some camera videos do not correspond to gazemap videos, we have filtered them. Official web in [link](https://deepdrive.berkeley.edu/ "Official BDDA").
+> (3) **BDDA**: This dataset we uploaded in BaiduYun (code: BDDA) [<a href="https://pan.baidu.com/s/1JDUejLifqF3vFOx-3izYdw?pwd=BDDA" ><img src="fig/baiduyun.jpg" alt="baidunyu" width="50" height="auto" /></a>](www.baidu.com "Download BDDA"). Some camera videos and gazemap videos frame rate inconsistency, we have matched and cropped them. Some camera videos do not correspond to gazemap videos, we have filtered them. Official web in [link](https://deepdrive.berkeley.edu/ "Official BDDA").
 
 <div align="center">
 <table style="width: 100%; table-layout: auto;">
@@ -188,7 +187,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 
 ### 	Environment
 
-​	👉*If you have downloaded our `repository code` and installed `PyTorch` and `CUDA`.*  [More details](deployment.md)
+​	👉*If you have downloaded our `repository code` and installed `PyTorch` and `CUDA`.*  [More details](deployment.md#(1)-Environment)
 
 ```python
 pip install requirements.txt
@@ -198,7 +197,7 @@ pip install -e utils/models/mamba
 
 ### 	Run train 
 
-​	👉*If you wish to train with our model, please use the command below.* [More details](deployment.md)
+​	👉*If you wish to train with our model, please use the command below.* [More details](deployment.md#(2)-Run-train)
 
 ```python
 python train.py --network salmm --b 32 --g 0 --category xxx --root xxx
@@ -219,52 +218,21 @@ cd metrics
 
 Although `Python` testing is more convenient, our test benchmark is based on the previous work (`CDNN`、`DrFixD-rainy`、......), and the results calculated by `Python` do not match those calculated by `Matlab`. We have provided a `Python` test code, which is basically consistent with `Matlab` in terms of `CC`, `SIM`, and `KLD` metrics.
 
-​	👉*If you wish to make predictions directly using our model results, you can do so using the command.*  [More details](deployment.md)
+​	👉*If you wish to start with a rough evaluation metric, you can do so using the command.*  [More details](deployment.md#(3)-Run-Test)
 
 ```python
-python evaluate-metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
+python evaluate_metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
 ```
 
-1. Our trained weights. (We are preparing. Please wait.)
+### 	Run visualization
 
-<div align="center">
-<table>
-  <thead>
-    <tr>
-      <th><i>$SalM^2$</i> for <i>TrafficGaze</i></th>
-      <th><i>$SalM^2$</i> for <i>DrFixD-rainy</i></th>
-      <th><i>$SalM^2$</i> for <i>BDDA</i></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="http://www.baidu.com" title="trained for TrafficGaze">trained for TrafficGaze</a></td>
-      <td><a href="http://www.baidu.com" title="trained for DrFixD-rainy">trained for DrFixD-rainy</a></td>
-      <td><a href="http://www.baidu.com" title="trained for BDDA">trained for BDDA</a></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-2. Our prediction results. (We are preparing. Please wait.)
+We also offer visualized code. Visualization can support the input of various types of data such as `str`, `list`, and `dataloader`. [More details](deployment.md#(4)-Run-visualization)
 
-<div align="center">
-<table>
-  <thead>
-    <tr>
-      <th><i>$SalM^2$</i> for <i>TrafficGaze</i></th>
-      <th><i>$SalM^2$</i> for <i>DrFixD-rainy</i></th>
-      <th><i>$SalM^2$</i> for <i>BDDA</i></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="http://www.baidu.com" title="Prediction TrafficGaze">The prediction results link</a></td>
-      <td><a href="http://www.baidu.com" title="Prediction DrFixD-rainy">The prediction results link</a></td>
-      <td><a href="http://www.baidu.com" title="Prediction BDDA">The prediction results link</a></td>
-    </tr>
-  </tbody>
-</table>
-</div>
+​	👉*If you want to visualize all the data of a certain dataset directly, you can use the following command.*
+
+```python
+python visualization.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
+```
 
 ## 🚀 Live Demo [🔁](#start-anchor)
 

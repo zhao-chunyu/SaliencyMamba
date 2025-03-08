@@ -177,10 +177,10 @@ if __name__ == '__main__':
     checkpoint = torch.load(file_name, map_location="cpu")
 
     model = build_model(args=args).cuda()
-    model.load_state_dict(checkpoint['state_dict'])  # 单卡训练加载方式
+    model.load_state_dict(checkpoint['state_dict'])  # single-gpu
     # print(model.device)
-    input_str = '/data/dataset/BDDA/images/0002/001.jpg'
-    input_list = ['/data/dataset/BDDA/images/0002/002.jpg', '/data/dataset/BDDA/images/0002/003.jpg']
+    # input_str = '/data/dataset/BDDA/images/0002/001.jpg'
+    # input_list = ['/data/dataset/BDDA/images/0002/002.jpg', '/data/dataset/BDDA/images/0002/003.jpg']
     input_dataloader = test_loader
     saveFolder = 'visualResults'
     visualization(model, input_dataloader, saveFolder)
