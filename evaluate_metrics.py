@@ -120,7 +120,7 @@ if __name__ == '__main__':
     # test------>next
     _, _, test_loader = build_dataset(args=args)
     ckpts = f'ckpts/{args.category}/{args.test_weight}/'
-    file_name = ckpts + f'model_best_{args.network}2.tar'
+    file_name = ckpts + f'model_best_{args.network}.tar'
     model = build_model(args=args)
     model = model.cuda()
 

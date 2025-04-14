@@ -259,13 +259,15 @@ python visualization.py --network salmm --b 1 --g 0 --category xxx --root xxx --
 If you find this repository useful, please use the following BibTeX entry for citation  and give us a star⭐.
 
 ```python
-@inproceedings{zhao2025salmmamba,
-  title={SalM²: An Extremely Lightweight Saliency Mamba Model for Real-Time Cognitive Awareness of Driver Attention},
-  author={Chunyu Zhao; Wentao Mu; Xian Zhou; Wenbo Liu; Fei Yan; Tao Deng},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={},
-  number={},
-  pages={},
-  year={2025}
+@article{zhao2025salmamba, 
+    title={SalM²: An Extremely Lightweight Saliency Mamba Model for Real-Time Cognitive Awareness of Driver Attention}, 
+    volume={39}, 
+    DOI={10.1609/aaai.v39i2.32157},  
+    number={2},
+    journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+    author={Zhao, Chunyu and Mu, Wentao and Zhou, Xian and Liu, Wenbo and Yan, Fei and Deng, Tao}, 
+    year={2025}, 
+    month={Apr.}, 
+    pages={1647-1655} 
 }
 ```
