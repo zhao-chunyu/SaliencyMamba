@@ -268,17 +268,17 @@ python visualization.py --network salmm --b 1 --g 0 --category xxx --root xxx --
 Thank you all for your contributions.
 
 <p align="left">
-  <a href="https://github.com/zhao-chunyu">
-    <img src="https://avatars.githubusercontent.com/zhao-chunyu" width="60px;" alt="SpringYu"/>
+  <a href="https://github.com/zhao-chunyu" style="text-decoration: none;">
+    <img src="https://avatars.githubusercontent.com/zhao-chunyu" width="60px" style="border-radius: 50%;" />
   </a>
-  <a href="https://github.com/MoonTao1">
-    <img src="https://avatars.githubusercontent.com/MoonTao1" width="60px;" alt="MoonTao"/>
+  <a href="https://github.com/MoonTao1" style="text-decoration: none;">
+    <img src="https://avatars.githubusercontent.com/MoonTao1" width="60px" style="border-radius: 50%;" />
   </a>
-  <a href="https://github.com/liu-5658">
-    <img src="https://avatars.githubusercontent.com/liu-5658" width="60px;" alt="LiuWenbo"/>
+  <a href="https://github.com/liu-5658" style="text-decoration: none;">
+    <img src="https://avatars.githubusercontent.com/liu-5658" width="60px" style="border-radius: 50%;" />
   </a>
-  <a href="https://github.com/taodeng">
-    <img src="https://avatars.githubusercontent.com/taodeng" width="60px;" alt="TaoDeng"/>
+  <a href="https://github.com/taodeng" style="text-decoration: none;">
+    <img src="https://avatars.githubusercontent.com/taodeng" width="60px" style="border-radius: 50%;" />
   </a>
 </p>
 
