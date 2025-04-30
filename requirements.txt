@@ -8,15 +8,12 @@ fvcore==0.1.5.post20221221
 imageio==2.33.1
 lm_eval==0.4.1
 omegaconf==2.3.0
-opencv_python==4.8.1.78
 packaging==24.0
 pandas==2.2.1
 Pillow==10.1.0
 pytest==8.1.1
 PyYAML==6.0.1
-regex==2023.10.3
 Requests==2.31.0
-scipy==1.12.0
 setuptools==68.2.2
 submitit==1.5.1
 tensorboardX==2.6.2.2
@@ -28,8 +25,6 @@ wheel==0.42.0
 xformers==0.0.24
 # our new
 ftfy==6.3.1
-fvcore==0.1.5.post20221221
-imageio==2.33.1
 numpy==2.2.3
 opencv_python==4.8.1.78
 regex==2023.10.3
