@@ -99,9 +99,9 @@ python evaluate_metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 <table>
   <thead>
     <tr>
-      <th><i>$SalM^2$</i> for <i>TrafficGaze</i></th>
-      <th><i>$SalM^2$</i> for <i>DrFixD-rainy</i></th>
-      <th><i>$SalM^2$</i> for <i>BDDA</i></th>
+      <th><i>SalM²</i> for <i>TrafficGaze</i></th>
+      <th><i>SalM²</i> for <i>DrFixD-rainy</i></th>
+      <th><i>SalM²</i> for <i>BDDA</i></th>
     </tr>
   </thead>
   <tbody>
@@ -128,9 +128,9 @@ python evaluate_metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 <table>
   <thead>
     <tr>
-      <th><i>$SalM^2$</i> for <i>TrafficGaze</i></th>
-      <th><i>$SalM^2$</i> for <i>DrFixD-rainy</i></th>
-      <th><i>$SalM^2$</i> for <i>BDDA</i></th>
+      <th><i>SalM²</i> for <i>TrafficGaze</i></th>
+      <th><i>SalM²</i> for <i>DrFixD-rainy</i></th>
+      <th><i>SalM²</i> for <i>BDDA</i></th>
     </tr>
   </thead>
   <tbody>
