@@ -26,7 +26,7 @@ When such stimuli induce attention shifts, driver attention manifests as changes
     <img src="fig\case3.jpg" width="900" height="auto" />
 </div>
 
-### (4) Performance of different resolution for our model. ($256^2$, $512^2$)
+### (4) Performance of different resolution for our model. (256², 512²)
 
 As shown in the table below, the experimental results demonstrate that: these metrics result in only a slight improvement over 256×256 input images. However, it has a FLOPs of 4.72, which significantly increases the computational amount.
 

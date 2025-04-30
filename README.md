@@ -5,16 +5,25 @@
   <img src="fig\title_logo.jpg" alt="logo" width="600" height="auto" />
 </div>
 <div align="center">
-<b>Authors: Chunyu Zhao, Wentao Mu, Xian Zhou, Wenbo Liu, Fei Yan, Tao Deng*</b>
+<b>Authors: 
+<a href="https://scholar.google.com.hk/citations?user=IOeG3ygAAAAJ&hl=zh-CN" target="_blank">Chunyu Zhao</a>, 
+Wentao Mu, 
+Xian Zhou, 
+<a href="https://scholar.google.com.hk/citations?user=evBOeoAAAAAJ&hl=zh-CN" target="_blank">Wenbo Liu</a>, 
+Fei Yan, 
+<a href="https://scholar.google.com.hk/citations?user=WQ2hfUYAAAAJ&hl=zh-CN" target="_blank">Tao Deng</a>📧
+</b>
 </div>
 <div align="center">
-<b>Email: zhaochunyu@my.swjtu.edu.cn || *: corresponding author</b>
+<b>Contact: springyu.zhao@foxmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧: corresponding author</b>
 </div>
 <div align="center">
   <img src="fig/demo-example1.gif" alt="BDDA-1" width="200" height="auto" />
   <img src="fig/demo-example2.gif" alt="BDDA-2" width="200" height="auto" />
   <img src="fig/demo-example3.gif" alt="BDDA-2" width="200" height="auto" />
 </div>
+
+
 
 ## 🔥Update
 
@@ -30,7 +39,7 @@
 
 - **2024/10/23**: We release the uniform saliency dataset loader. You can simply use it by `from utils.datasets import build_dataset`.
 
-- **2024/07/25**: How to use our model ($SalM^2$).
+- **2024/07/25**: How to use our model (**SalM²**).
     - How to train:  [command](#Run-train ) & [script](deployment.md)
     - How to test:  [command](#Run-test ) & [script](deployment.md)
   - compare model
@@ -59,7 +68,7 @@
 
 ## ⚡Proposed Model [🔁](#start-anchor)
 
-we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving scene semantic information to guide "Bottom-up" driving scene image information to simulate human drivers' attention allocation. 
+we propose a saliency mamba model, named **SalM²** that uses "Top-down" driving scene semantic information to guide "Bottom-up" driving scene image information to simulate human drivers' attention allocation. 
 
 <img src="fig\overview.jpg" style="zoom: 100%;">
 
@@ -183,7 +192,7 @@ we propose a saliency mamba model, named $SalM^2$ that uses "Top-down" driving s
 ​	👉*If you have downloaded our `repository code` and installed `PyTorch` and `CUDA`.*  [More details](deployment.md#(1)-Environment)
 
 ```python
-pip install requirements.txt
+pip install -r requirements.txt
 pip install -e utils/models/causal-conv1d
 pip install -e utils/models/mamba
 ```
@@ -252,6 +261,27 @@ python visualization.py --network salmm --b 1 --g 0 --category xxx --root xxx --
 </div>
 
 - ***Other downstream tasks***......
+
+
+## 🙌 Contributors [🔁](#start-anchor)
+
+Thank you all for your contributions.
+
+<p align="left">
+  <a href="https://github.com/zhao-chunyu">
+    <img src="https://avatars.githubusercontent.com/zhao-chunyu" width="60px;" alt="SpringYu"/>
+  </a>
+  <a href="https://github.com/MoonTao1">
+    <img src="https://avatars.githubusercontent.com/MoonTao1" width="60px;" alt="MoonTao"/>
+  </a>
+  <a href="https://github.com/liu-5658">
+    <img src="https://avatars.githubusercontent.com/liu-5658" width="60px;" alt="LiuWenbo"/>
+  </a>
+  <a href="https://github.com/taodeng">
+    <img src="https://avatars.githubusercontent.com/taodeng" width="60px;" alt="TaoDeng"/>
+  </a>
+</p>
+
 
 ## ⭐️ Cite [🔁](#start-anchor)
 

@@ -25,7 +25,7 @@ pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.1.1 --index-url https
 * Install `causal_conv1d` and `mamba`
 
 ```python
-pip install requirements.txt
+pip install -r requirements.txt
 pip install -e utils/models/causal-conv1d
 pip install -e utils/models/mamba
 ```
