@@ -1,4 +1,4 @@
-calcForBDDA(root_path, root_path2, root_path3)
+function calcForBDDA(root_path, root_path2, root_path3)
     warning('off'); 
 
     % test_data path
@@ -6,12 +6,13 @@ calcForBDDA(root_path, root_path2, root_path3)
     % root_path = '/data/dataset/CDNN/cdnn-mamba/CAmamba-BDDA/ckpts/CDNN1/model_out/';
     % root_path2 = '/data/dataset/CDNN/cdnn-mamba/CAmamba-BDDA/ckpts/CDNN1/model_out/';
 
-    root_path = '/data/dataset/CDNN/cdnn-mamba/DrFixD-rainy/visual_model/ckpts/model_out/';
-    root_path2 = '/data/dataset/CDNN/cdnn-mamba/CAmamba-BDDA/ckpts/CDNN1/model_out/';
+    % root_path = '/data/dataset/CDNN/cdnn-mamba/DrFixD-rainy/visual_model/ckpts/model_out/';
+    % root_path2 = '/data/dataset/CDNN/cdnn-mamba/CAmamba-BDDA/ckpts/CDNN1/model_out/';
 
 
     % test data_name
-    load('/data/dataset/CDNN/cdnn-mamba/CAmamba-BDDA/ckpts/CAmamba9/model_out/test_c.mat');
+    % load('/data/dataset/CDNN/cdnn-mamba/CAmamba-BDDA/ckpts/CAmamba9/model_out/test_c.mat');
+    load(root_path3)
 
     % save metrics
     auc_b_scores = [];

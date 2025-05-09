@@ -11,7 +11,7 @@ Wentao Mu,
 Xian Zhou, 
 <a href="https://scholar.google.com.hk/citations?user=evBOeoAAAAAJ&hl=zh-CN" target="_blank">Wenbo Liu</a>, 
 Fei Yan, 
-<a href="https://scholar.google.com.hk/citations?user=WQ2hfUYAAAAJ&hl=zh-CN" target="_blank">Tao Deng</a>📧
+<a href="https://scholar.google.com.hk/citations?user=WQ2hfUYAAAAJ&hl=zh-CN" target="_blank">Tao Deng</a><sup>📧</sup>
 </b>
 </div>
 <div align="center">
