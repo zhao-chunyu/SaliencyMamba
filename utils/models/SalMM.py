@@ -282,7 +282,7 @@ class SC_Att_Bridge(nn.Module):
         return t1 + r1_, t2 + r2_, t3 + r3_, t4 + r4_, t5 + r5_
     
 
-class SalMambaModel(nn.Module):
+class SalMM(nn.Module):
     
     def __init__(self, num_classes=1, input_channels=3, c_list=[8,12,16,16,24,32],
                 split_att='fc', bridge=True):

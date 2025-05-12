@@ -19,7 +19,7 @@ conda activate salmamba
 * Install PyTorch 2.2.0+cu121
 
 ```python
-pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu121
+pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu121
 ```
 
 * Install `causal_conv1d` and `mamba`

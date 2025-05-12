@@ -267,25 +267,51 @@ python visualization.py --network salmm --b 1 --g 0 --category xxx --root xxx --
 
 Thank you to all collaborators for your support and to those who have helped improve this repository.
 
-<p align="left">
-  <a href="https://github.com/zhao-chunyu">
-    <img src="https://avatars.githubusercontent.com/zhao-chunyu" width="60" height="60" />
-  </a>
-  <a href="https://github.com/MoonTao1">
-    <img src="https://avatars.githubusercontent.com/MoonTao1" width="60" height="60" />
-  </a>
-  <a href="https://github.com/liu-5658">
-    <img src="https://avatars.githubusercontent.com/liu-5658" width="60" height="60" />
-  </a>
-  <a href="https://github.com/taodeng">
-    <img src="https://avatars.githubusercontent.com/taodeng" width="60" height="60" />
-  </a>&nbsp;
-  <a href="https://github.com/ly27253">
-    <img src="https://avatars.githubusercontent.com/ly27253" width="60" height="60" />
-  </a>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/zhao-chunyu">
+        <img src="https://avatars.githubusercontent.com/zhao-chunyu" width="60" height="60" alt="zhao-chunyu"/>
+      </a>
+      <br>Core Author
+    </td>
+    <td align="center">
+      <a href="https://github.com/MoonTao1">
+        <img src="https://avatars.githubusercontent.com/MoonTao1" width="60" height="60" alt="MoonTao1"/>
+      </a>
+      <br>Core Author
+    </td>
+    <td align="center">
+      <a href="https://github.com/liu-5658">
+        <img src="https://avatars.githubusercontent.com/liu-5658" width="60" height="60" alt="liu-5658"/>
+      </a>
+      <br>Core Author
+    </td>
+    <td align="center">
+      <a href="https://github.com/taodeng">
+        <img src="https://avatars.githubusercontent.com/taodeng" width="60" height="60" alt="taodeng"/>
+      </a>
+      <br>Core Author
+    </td>
+    <td align="center">
+      <a href="https://github.com/ly27253">
+        <img src="https://avatars.githubusercontent.com/ly27253" width="60" height="60" alt="ly27253"/>
+      </a>
+      <a href="https://github.com/zhao-chunyu/SaliencyMamba/issues/3">
+      <br>Repository
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ybLin-TJ">
+        <img src="https://avatars.githubusercontent.com/ybLin-TJ" width="60" height="60" alt="ly27253"/>
+      </a>
+      <a href="https://github.com/zhao-chunyu/SaliencyMamba/issues/4">
+      <br>Repository
+      </a>
+  </tr>
+</table>
 
-
+> Repository: It indicates that reproducing the repository helps to improve the repository errors.
 
 ## ⭐️ Cite [🔁](#start-anchor)
 

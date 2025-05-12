@@ -1,5 +1,5 @@
 # base
-apex==0.1
+apex
 av==11.0.0
 decord==0.6.0
 deepspeed==0.13.1
@@ -25,7 +25,7 @@ wheel==0.42.0
 xformers==0.0.24
 # our new
 ftfy==6.3.1
-numpy==2.2.3
+numpy==1.26.4
 opencv_python==4.8.1.78
 regex==2023.10.3
 scipy==1.15.2
