@@ -9,7 +9,7 @@
 
 ## #2 语义信息的获取方式
 
-- 对于TrafficGaze [[1]](#ref_TrafficGaze)、DrFixD-Rainy [[2]](#ref_DrFixD-Rainy)、BDDA [[3]](#ref_BDDA) 数据集来说，都是包含驾驶场景和驾驶员注意信息，不涵盖语义信息，那么如何获取相应的语义信息呢？
+- 对于TrafficGaze [[1]](#ref_TrafficGaze)、DrFixD-Rainy [[2]](#ref_DrFixD-Rainy)、BDDA [[3]](#ref_BDDA) 数据集来说，都是包含驾驶场景和驾驶员注意信息，不涵盖文本的描述性语义信息，那么如何获取相应的语义信息呢？
 
 - 我们采用一个简单的方式以解决这个问题，采用CLIP [[4]](#ref_clip) 获取该图像的语义信息，在这里我们采用CLIP的图像编码器作为语义信息提取器，那为什么采用图像编码器用于提取语义信息呢？感觉很矛盾。
 
@@ -55,8 +55,9 @@ class CrossModelAtt(nn.Module):
 	img:驾驶场景图像，通过clip提取得到语义信息q,k
     	q的获取代码：q = clip_feature.view(b, c, -1)
     	k的获取代码：k = clip_feature.view(b, c, -1).permute(0, 2, 1)
+    	
 	feature:主干网络提取的图像特征，作为v
-		v的获取代码：v = feature.view(b, c, -1)]
+        v的获取代码：v = feature.view(b, c, -1)]
 '''
     def forward(self, img, feature):
         # 1: get clip feature
