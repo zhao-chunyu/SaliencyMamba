@@ -15,7 +15,7 @@
 
 - 如图1所示，我们认为CLIP作为一个<Image, Text>图像文本对训练得到的大模型，其ImageEncoder和TextEncoder在经过训练之后，其得到的Token_I和Token_T已经被拉进到相似的特征语义空间可以作为语义信息直接使用。此外场景图像没有直接语义信息，因此本文采用CLIP的ImageEncoder用于提取相应的语义信息。
 
-<div style="text-align: center;">
+<div align="center">
   <img src="clip.jpg" alt="CLIP" style="max-width: 100%; height: auto;" />
   <p style="margin-top: 8px;">
     <a href="#ref_clip" style="text-decoration: none; color: #555;">
@@ -23,6 +23,7 @@
     </a>
   </p>
 </div>
+
 
 ## #3 CMA模块的设计
 
@@ -67,27 +68,30 @@ class CrossModelAtt(nn.Module):
 
 **论文**：我们的CMA模块的图如图2所示，与上述代码一致无误。
 
-<div style="text-align: center;">
-  <img src="CMA.jpg" alt="CLIP" style="max-width: 40%; height: auto;" />
+<div align="center">
+  <img src="CMA.jpg" alt="CLIP" width="500" height="auto" />
   <p style="margin-top: 8px;">
     <a href="#ref_salmm" style="text-decoration: none; color: #555;">
       图 2：SalM²方法中CMA模块[5]
     </a>
   </p>
 </div>
+
 > **⭐值得说明的是**:
 
 > - 图2中的Text实际想表达的意思是语义信息，写成Semantic可能更易于理解。
 > - 在原文中的公式3后面的那段中有笔误如图3，由于已经发表，我们在此处说明。
 
-<div style="text-align: center;">
-  <img src="qkv.jpg" alt="CLIP" style="max-width: 40%; height: auto;" />
+<div align="center">
+  <img src="qkv.jpg" alt="CLIP" width="500" height="auto" />
   <p style="margin-top: 8px;">
     <a href="#ref_salmm" style="text-decoration: none; color: #555;">
       图 3：SalM²书写错误修订[5]
     </a>
   </p>
 </div>
+
+
 
 ## Reference
 
