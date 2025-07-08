@@ -6,16 +6,17 @@
 </div>
 
 <p align="center">
-  <a href="https://arxiv.org/pdf/2502.16214">
+  <a href="https://arxiv.org/pdf/2502.16214" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/arXiv-2502.16214-b31b1b.svg" alt="arXiv" style="margin: 0 6px; border: none;" />
   </a>
-  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32157">
+  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32157" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/AAAI-SalM2-blueviolet" alt="AAAI" style="margin: 0 6px; border: none;" />
   </a>
-  <a href="./LICENSE">
+  <a href="./LICENSE" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" style="margin: 0 6px; border: none;" />
   </a>
 </p>
+
 
 <div align="center">
 <b>Authors: 
