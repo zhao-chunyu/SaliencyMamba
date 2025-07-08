@@ -4,18 +4,10 @@
 <div align="center">
   <img src="fig\title_logo.jpg" alt="logo" width="600" height="auto" />
 </div>
-<p align="center">
-  <a href="https://arxiv.org/pdf/2502.16214">
-    <img src="https://img.shields.io/badge/arXiv-2502.16214-b31b1b.svg" alt="arXiv2502.16214">
-  </a>
-  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32157">
-    <img src="https://img.shields.io/badge/AAAI2025-SalM²-blueviolet" alt="AAAI2025">
-  </a>
-  <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
-  </a>
-</p>
 
+[![arXiv](https://img.shields.io/badge/arXiv-2502.16214-b31b1b.svg)](https://arxiv.org/pdf/2502.16214)
+[![AAAI](https://img.shields.io/badge/AAAI2025-SalM²-blueviolet)](https://ojs.aaai.org/index.php/AAAI/article/view/32157)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 <div align="center">
 <b>Authors: 
@@ -35,8 +27,6 @@ Fei Yan,
   <img src="fig/demo-example2.gif" alt="BDDA-2" width="200" height="auto" />
   <img src="fig/demo-example3.gif" alt="BDDA-2" width="200" height="auto" />
 </div>
-
-
 
 
 ## 🔥Update
