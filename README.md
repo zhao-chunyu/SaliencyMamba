@@ -5,16 +5,6 @@
   <img src="fig\title_logo.jpg" alt="logo" width="600" height="auto" />
 </div>
 
-<p align="center">
-  <a href="https://arxiv.org/pdf/2502.16214" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/arXiv-2502.16214-b31b1b.svg" alt="arXiv" style="border:none; vertical-align:middle;" />
-  </a><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32157" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/AAAI2025-SaliencyMamba-blueviolet" alt="AAAI" style="border:none; vertical-align:middle;" />
-  </a><a href="./LICENSE" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" style="border:none; vertical-align:middle;" />
-  </a>
-</p>
-
 <div align="center">
 <b>Authors: 
 <a href="https://scholar.google.com.hk/citations?user=IOeG3ygAAAAJ&hl=zh-CN" target="_blank">Chunyu Zhao</a>, 
@@ -25,6 +15,15 @@ Fei Yan,
 <a href="https://scholar.google.com.hk/citations?user=WQ2hfUYAAAAJ&hl=zh-CN" target="_blank">Tao Deng</a><sup>📧</sup>
 </b>
 </div>
+<p align="center">
+
+[![arXiv](https://img.shields.io/badge/arXiv-2502.16214-b31b1b.svg)](https://arxiv.org/pdf/2502.16214)
+[![AAAI](https://img.shields.io/badge/AAAI-SaliencyMamba-blueviolet)](https://ojs.aaai.org/index.php/AAAI/article/view/32157)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+</p>
+
+
 <div align="center">
 <b>Contact: springyu.zhao@foxmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧: corresponding author</b>
 </div>
