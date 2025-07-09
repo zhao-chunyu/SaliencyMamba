@@ -17,15 +17,15 @@ Fei Yan,
 </div>
 
 <div align="center">
+<b>Contact: springyu.zhao@foxmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧: corresponding author</b>
+</div>
+
+<div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv-2502.16214-b31b1b.svg)](https://arxiv.org/pdf/2502.16214)[![AAAI](https://img.shields.io/badge/Paper-AAAI2025-blueviolet)](https://ojs.aaai.org/index.php/AAAI/article/view/32157)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 </div>
 
-
-<div align="center">
-<b>Contact: springyu.zhao@foxmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧: corresponding author</b>
-</div>
 <div align="center">
   <img src="fig/demo-example1.gif" alt="BDDA-1" width="200" height="auto" />
   <img src="fig/demo-example2.gif" alt="BDDA-2" width="200" height="auto" />
