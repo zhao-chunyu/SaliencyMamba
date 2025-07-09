@@ -15,13 +15,12 @@ Fei Yan,
 <a href="https://scholar.google.com.hk/citations?user=WQ2hfUYAAAAJ&hl=zh-CN" target="_blank">Tao Deng</a><sup>📧</sup>
 </b>
 </div>
-<p align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2502.16214-b31b1b.svg)](https://arxiv.org/pdf/2502.16214)
-[![AAAI](https://img.shields.io/badge/AAAI-SaliencyMamba-blueviolet)](https://ojs.aaai.org/index.php/AAAI/article/view/32157)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+<div align="center">
 
-</p>
+[![arXiv](https://img.shields.io/badge/arXiv-2502.16214-b31b1b.svg)](https://arxiv.org/pdf/2502.16214)[![AAAI](https://img.shields.io/badge/Paper-AAAI2025-blueviolet)](https://ojs.aaai.org/index.php/AAAI/article/view/32157)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+</div>
 
 
 <div align="center">
