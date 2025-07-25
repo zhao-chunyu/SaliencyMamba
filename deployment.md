@@ -140,12 +140,12 @@ python evaluate_metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
 
 ​		  **(b) Handing Model's Weight**. To facilitate model sharing, we have removed the frozen components in the top-down branch of the network.  After downloading, please restore these components before using the model.
 
- 		*Move the checkpoint files to the appropriate paths*. case:
+*Move the checkpoint files to the appropriate paths*. case:
 
 ```python
 mv model_best_salmm_incomplete.tar  ckpts/TrafficGaze/xxx/model_best_salmm_incomplete.tar 
 ```
- 		*Execute the script to recover the full model weights.* case:
+*Execute the script to recover the full model weights.* case:
 
 ```python
 cd SaliencyMamba/utils
@@ -170,7 +170,7 @@ python resore_model.py --inc_path xxx.tar --c_path model_best_salmm.tar
 ```python
 Subject: Request for Visualization Results of TrafficGaze and DrFixD-rainy
 
-Dear [Recipient's Name],
+Dear Chunyu Zhao,
 
 I would like to request access to the visualization results (video-frame outputs) of the following training experiments:
 
