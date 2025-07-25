@@ -7,7 +7,7 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2502.16214-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2502.16214) [![AAAI](https://img.shields.io/badge/%F0%9F%A4%97%20Paper-AAAI2025-blue)](https://ojs.aaai.org/index.php/AAAI/article/view/32157) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![GitHub](https://img.shields.io/badge/model-TrafficGaze-181717?logo=github)](https://github.com/yourname/yourrepo) [![GitHub](https://img.shields.io/badge/model-DrFixD(Rainy)-181717?logo=github)](https://github.com/yourname/yourrepo) [![GitHub](https://img.shields.io/badge/model-BDDA-181717?logo=github)](https://github.com/yourname/yourrepo)
+[![arXiv](https://img.shields.io/badge/arXiv-2502.16214-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2502.16214) [![AAAI](https://img.shields.io/badge/%F0%9F%A4%97%20Paper-AAAI2025-blue)](https://ojs.aaai.org/index.php/AAAI/article/view/32157) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![GitHub](https://img.shields.io/badge/model-TrafficGaze-181717?logo=github)](https://github.com/zhao-chunyu/SaliencyMamba/releases/tag/supp) [![GitHub](https://img.shields.io/badge/model-DrFixD(Rainy)-181717?logo=github)](https://github.com/zhao-chunyu/SaliencyMamba/releases/tag/supp) [![GitHub](https://img.shields.io/badge/model-BDDA-181717?logo=github)](https://github.com/zhao-chunyu/SaliencyMamba/releases/download/supp/model_best_salmm_TrafficGaze_256x256_incomplete.tar)
 
 </div>
 
