@@ -34,6 +34,9 @@ class CrossModelAtt(nn.Module):
         self.model, _ = clip.load(backbone)
         self.model = self.model.eval()
 
+        for param in self.model.parameters():
+            param.requires_grad = False
+
         self.gamma = nn.Parameter(torch.zeros(1))
         self.softmax = nn.Softmax(dim=-1)
 
