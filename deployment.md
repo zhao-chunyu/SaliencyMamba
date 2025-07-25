@@ -72,7 +72,7 @@ we calculate the predicted values and then use `Matlab` for the prediction. [Mor
 python saveMat.py --network salmm --b 1 --g 0 --category xxx --root xxx --test_weight xxx
 ```
 
-​		*Oofficial evaluation sh*. case:
+​		*Official evaluation sh*. case:
 
 ```python
 cd metrics
