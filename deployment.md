@@ -130,9 +130,9 @@ python evaluate_metrics.py --network salmm --b 1 --g 0 --category xxx --root xxx
   </thead>
   <tbody>
     <tr>
-      <td><a href="http://www.baidu.com" title="retrained for TrafficGaze">retrained for TrafficGaze</a></td>
-      <td><a href="http://www.baidu.com" title="retrained for DrFixD-rainy">retrained for DrFixD-rainy</a></td>
-      <td><a href="http://www.baidu.com" title="trained for BDDA">trained for BDDA</a></td>
+      <td><a href="https://github.com/zhao-chunyu/SaliencyMamba/releases/download/supp/model_best_salmm_TrafficGaze_256x256_incomplete.tar" title="retrained for TrafficGaze">retrained for TrafficGaze</a></td>
+      <td><a href="https://github.com/zhao-chunyu/SaliencyMamba/releases/download/supp/model_best_salmm_DrFixD_rainy_256x256_incomplete.tar" title="retrained for DrFixD-rainy">retrained for DrFixD-rainy</a></td>
+      <td><a href="https://github.com/zhao-chunyu/SaliencyMamba/releases/download/supp/model_best_salmm_BDDA_256x256_incomplete.tar" title="trained for BDDA">trained for BDDA</a></td>
     </tr>
   </tbody>
 </table>
