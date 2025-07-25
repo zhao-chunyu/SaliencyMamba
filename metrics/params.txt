@@ -1,0 +1,4 @@
+DrFixD_rainy
+ckpts/salmm/outputMat/
+dataset/TrafficGaze/fixdata/fixdata
+dataset/TrafficGaze/fixdata/test.mat
