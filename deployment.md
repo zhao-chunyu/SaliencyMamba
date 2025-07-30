@@ -149,7 +149,7 @@ mv model_best_salmm_incomplete.tar  ckpts/TrafficGaze/xxx/model_best_salmm_incom
 
 ```python
 cd SaliencyMamba/utils
-python resore_model.py --inc_path xxx.tar --c_path model_best_salmm.tar
+python restore_weight.py --inc_path xxx.tar --c_path model_best_salmm.tar
 ```
 
 > `inc_path`: the path to the incomplete (stripped) checkpoint.
