@@ -153,7 +153,7 @@ python restore_weight.py --inc_path xxx.tar --c_path model_best_salmm.tar
 ```
 
 > `inc_path`: the path to the incomplete (stripped) checkpoint.
-> `c_path`: the target path where the restored full checkpoint will be saved.
+> `c_path`: the target path where the restored full checkpoint will be saved. 
 
 ​		**(c) Start Testing Model**. You may generate `.mat` files from the model outputs and use MATLAB scripts to compute evaluation metrics as needed.  [More details](metrics/README.md)
 
