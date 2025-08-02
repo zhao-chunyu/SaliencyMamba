@@ -15,24 +15,6 @@
 
 
 <div align="center">
-
-[![Baidu TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM) [![Baidu DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM) [![Baidu BDDA](https://img.shields.io/badge/dataset-BDDA-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1JDUejLifqF3vFOx-3izYdw?pwd=BDDA) [![HF TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/TrafficGaze)[![HF DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/DrFixD_rainy)
-
-</div>
-
-<div align="center">
-
-[![Baidu TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM) [![Baidu DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM) [![Baidu BDDA](https://img.shields.io/badge/dataset-BDDA-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1JDUejLifqF3vFOx-3izYdw?pwd=BDDA)
-
-</div>
-
-<div align="center">
-
-[![HF TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/TrafficGaze)[![HF DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/DrFixD_rainy)
-
-</div>
-
-<div align="center">
 <b>Authors: 
 <a href="https://scholar.google.com.hk/citations?user=IOeG3ygAAAAJ&hl=zh-CN" target="_blank">Chunyu Zhao</a>, 
 Wentao Mu, 
