@@ -7,7 +7,28 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2502.16214-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2502.16214) [![AAAI](https://img.shields.io/badge/%F0%9F%A4%97%20Paper-AAAI2025-blue)](https://ojs.aaai.org/index.php/AAAI/article/view/32157) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![GitHub](https://img.shields.io/badge/model-TrafficGaze-181717?logo=github)](https://github.com/zhao-chunyu/SaliencyMamba/releases/tag/supp) [![GitHub](https://img.shields.io/badge/model-DrFixD(Rainy)-181717?logo=github)](https://github.com/zhao-chunyu/SaliencyMamba/releases/tag/supp) [![GitHub](https://img.shields.io/badge/model-BDDA-181717?logo=github)](https://github.com/zhao-chunyu/SaliencyMamba/releases/download/supp/model_best_salmm_TrafficGaze_256x256_incomplete.tar)
+[![arXiv](https://img.shields.io/badge/arXiv-2502.16214-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2502.16214) [![AAAI 2025 Paper](https://img.shields.io/badge/📝Paper-AAAI2025-blue)](https://ojs.aaai.org/index.php/AAAI/article/view/32157) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![GitHub](https://img.shields.io/badge/model-TrafficGaze-181717?logo=github)](https://github.com/zhao-chunyu/SaliencyMamba/releases/tag/supp) [![GitHub](https://img.shields.io/badge/model-DrFixD(Rainy)-181717?logo=github)](https://github.com/zhao-chunyu/SaliencyMamba/releases/tag/supp) [![GitHub](https://img.shields.io/badge/model-BDDA-181717?logo=github)](https://github.com/zhao-chunyu/SaliencyMamba/releases/download/supp/model_best_salmm_TrafficGaze_256x256_incomplete.tar)
+
+[![Baidu TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM) [![Baidu DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM) [![Baidu BDDA](https://img.shields.io/badge/dataset-BDDA-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1JDUejLifqF3vFOx-3izYdw?pwd=BDDA) [![HF TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/TrafficGaze)[![HF DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/DrFixD_rainy)
+
+</div>
+
+
+<div align="center">
+
+[![Baidu TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM) [![Baidu DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM) [![Baidu BDDA](https://img.shields.io/badge/dataset-BDDA-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1JDUejLifqF3vFOx-3izYdw?pwd=BDDA) [![HF TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/TrafficGaze)[![HF DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/DrFixD_rainy)
+
+</div>
+
+<div align="center">
+
+[![Baidu TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM) [![Baidu DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM) [![Baidu BDDA](https://img.shields.io/badge/dataset-BDDA-3f51b5?logo=baidu&logoColor=white)](https://pan.baidu.com/s/1JDUejLifqF3vFOx-3izYdw?pwd=BDDA)
+
+</div>
+
+<div align="center">
+
+[![HF TrafficGaze](https://img.shields.io/badge/dataset-TrafficGaze-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/TrafficGaze)[![HF DrFixD(Rainy)](https://img.shields.io/badge/dataset-DrFixD(Rainy)-orange?logo=huggingface)](https://huggingface.co/datasets/springyu/DrFixD_rainy)
 
 </div>
 
@@ -35,6 +56,9 @@ Fei Yan,
 
 ## 🔥Update
 
+- **2025/08/02**: **We have added multiple download options for datasets.**
+	- Baidu: `Trafficgaze`, `DrFixD-rainy`, `BDDA`
+	- Hugging Face: `Trafficgaze`, `DrFixD-rainy`
 - **2025/07/24**: **The official trained weights have been uploaded.** [Details](deployment.md), [Download](https://github.com/zhao-chunyu/SaliencyMamba/releases/tag/supp)
 - **2025/03/03**: **Complete the contents of the code repository**.
 	- Datasets upload: `Trafficgaze`✅, `DrFixD-rainy`✅, `BDDA`✅
@@ -120,10 +144,10 @@ we propose a saliency mamba model, named **SalM²** that uses "Top-down" driving
 </div>
 【note】 For all datasets we will provide our download link with the official link. Please choose according to your needs.
 
-> (1) **TrafficGaze**: This dataset we uploaded in BaiduYun (code: SALM) [<a href="https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM" ><img src="fig/baiduyun.jpg" alt="baidunyu" width="50" height="auto" /></a>](www.baidu.com "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze").
->
-> (2) **DrFixD-rainy**: This dataset we uploaded in BaiduYun (code: SALM) [<a href="https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM" ><img src="fig/baiduyun.jpg" alt="baidunyu" width="50" height="auto" /></a>](www.baidu.com "Download DrFixD-rainy"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/DrFixD-rainy "Official DrFixD-rainy").
->
+> (1) **TrafficGaze**: This dataset is available on BaiduYun (code: SALM) [<a href="https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM"><img src="fig/baiduyun.jpg" alt="baiduyun" width="50" /></a>](https://pan.baidu.com/s/1MJaNCcVe7vLSbcDSG0A3-w?pwd=SALM "Download TrafficGaze") or on Hugging Face [<a href="https://huggingface.co/datasets/springyu/TrafficGaze"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" width="35" /></a>](https://huggingface.co/datasets/springyu/TrafficGaze "Download TrafficGaze"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/CDNN-traffic-saliency "Official Traffic_Gaze").
+
+> (2) **DrFixD-rainy**: This dataset is available on BaiduYun (code: SALM) [<a href="https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM"><img src="fig/baiduyun.jpg" alt="baiduyun" width="50" /></a>](https://pan.baidu.com/s/1wYqS7ZrkKbxfOHZlczvSUA?pwd=SALM "Download DrFixD-rainy") or on Hugging Face [<a href="https://huggingface.co/datasets/springyu/DrFixD_rainy"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" width="35" /></a>](https://huggingface.co/datasets/springyu/DrFixD_rainy "Download DrFixD-rainy"). We crop 5 frames before and after each video. Official web in [link](https://github.com/taodeng/DrFixD-rainy "Official DrFixD-rainy").
+
 > (3) **BDDA**: This dataset we uploaded in BaiduYun (code: BDDA) [<a href="https://pan.baidu.com/s/1JDUejLifqF3vFOx-3izYdw?pwd=BDDA" ><img src="fig/baiduyun.jpg" alt="baidunyu" width="50" height="auto" /></a>](www.baidu.com "Download BDDA"). Some camera videos and gazemap videos frame rate inconsistency, we have matched and cropped them. Some camera videos do not correspond to gazemap videos, we have filtered them. Official web in [link](https://deepdrive.berkeley.edu/ "Official BDDA").
 
 <div align="center">
